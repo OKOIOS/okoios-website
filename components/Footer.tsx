@@ -55,7 +55,10 @@ export default function Footer() {
         </div>
       </div>
       <small className=" bg-oklightgray text-oklavishwhite flex justify-center items-center w-screen h-16">
-        All Rights Reserved {new Date().getFullYear()} {COMPANY_LONG_NAME}
+        All Rights Reserved {new Date().getFullYear()} {COMPANY_LONG_NAME} -
+        <div className="underline ml-1">
+          <Link href="/privacy">Privacy Policy</Link>
+        </div>
       </small>
     </footer>
   );
