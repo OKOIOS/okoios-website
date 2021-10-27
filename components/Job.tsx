@@ -45,7 +45,11 @@ export default function Job({ job }) {
           dangerouslySetInnerHTML={{ __html: job.description }}
           className="mb-20 job-description"
         />
-        <ButtonLink href="/#contact" label="Apply Now" highlighted />
+        <ButtonLink
+          href={`https://evoportaluk.tracker-rms.com/Okoios/apply?jobcode=${job.joblink}`}
+          label="Apply Now"
+          highlighted
+        />
       </div>
     </div>
   );

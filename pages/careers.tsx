@@ -44,7 +44,7 @@ export default function Home({ jobs }) {
 export async function getServerSideProps() {
   try {
     const res = await fetch(
-      `https://evoportaluk.tracker-rms.com/Opportunity/Publish/?db=Okoios&theme=purplehaze&fields=reference,title,location,worktype,description&output=xml`
+      `https://evoportaluk.tracker-rms.com/Opportunity/Publish/?db=Okoios&theme=purplehaze&fields=joblink,reference,title,location,worktype,description&output=xml`
     );
     const data = await res.text();
     const result = xmlParser.parse(data);
