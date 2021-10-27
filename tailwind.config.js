@@ -60,6 +60,7 @@ module.exports = {
       okwhite: '#FFFFFF',
       okblack: '#000000',
       okred: '#F91616',
+      oklightergray: '#494949',
       oktransparentorange: 'rgba(255, 131, 17, 0.1)',
       oktransparentgreen: 'rgba(17, 255, 141, 0.2)',
       oktransparentpurple: 'rgba(179, 17, 255, 0.1)',

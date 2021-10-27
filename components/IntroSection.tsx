@@ -1,4 +1,5 @@
 import { COMPANY_SHORT_NAME, COMPANY_TAGLINE } from '../utils/constants';
+import ButtonLink from './ButtonLink';
 import Link from 'next/link';
 import React from 'react';
 
@@ -34,16 +35,8 @@ export default function IntroSection() {
             </span>
           </div>
           <div className="flex">
-            <Link href="/about">
-              <div className="cursor-pointer flex items-center justify-center mr-8 h-button-h w-button-w bg-button-outline bg-button-size hover:bg-button active:bg-button focus:bg-button">
-                Know More
-              </div>
-            </Link>
-            <Link href="/#contact">
-              <div className="cursor-pointer flex items-center justify-center mr-8 h-button-h w-button-w bg-button-outline bg-button-size hover:bg-button active:bg-button focus:bg-button">
-                Contact Us
-              </div>
-            </Link>
+            <ButtonLink href="/about" label="Know More" />
+            <ButtonLink href="/#contact" label="Contact Us" />
           </div>
         </div>
       </div>
