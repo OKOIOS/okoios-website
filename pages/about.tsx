@@ -1,4 +1,5 @@
 import BusinessManagersSection from '../components/BusinessManagersSection';
+import CookieNotice from '../components/CookieNotice';
 import Footer from '../components/Footer';
 import Head from '../components/Head';
 import Header from '../components/Header';
@@ -57,6 +58,7 @@ export default function About() {
           <BusinessManagersSection />
         </main>
         <Footer />
+        <CookieNotice />
       </div>
     </>
   );
