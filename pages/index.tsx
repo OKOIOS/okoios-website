@@ -1,5 +1,6 @@
 import ContactForm from '../components/ContactForm';
 import ContactSection from '../components/ContactSection';
+import CookieNotice from '../components/CookieNotice';
 import Footer from '../components/Footer';
 import Head from '../components/Head';
 import Header from '../components/Header';
@@ -28,6 +29,7 @@ export default function Home() {
           <JoinUs />
         </main>
         <Footer />
+        <CookieNotice />
       </div>
     </>
   );

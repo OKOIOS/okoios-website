@@ -68,6 +68,8 @@ module.exports = {
       oktransparentgreenblue: 'rgba(17, 184, 255, 0.1)',
       oktransparentyellow: 'rgba(255, 203, 17, 0.1)',
       oktransparentblue: 'rgba(17, 27, 255, 0.1)',
+      oklightblue: '#c7cdd8',
+      okdarkblue: '#3c475c'
     },
   },
   variants: {
