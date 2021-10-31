@@ -1,4 +1,5 @@
 import ButtonLink from '../components/ButtonLink';
+import CookieNotice from '../components/CookieNotice';
 import Footer from '../components/Footer';
 import Head from '../components/Head';
 import Header from '../components/Header';
@@ -47,6 +48,7 @@ export default function Home({ jobs }) {
           </Container>
         </main>
         <Footer />
+        <CookieNotice />
       </div>
     </>
   );

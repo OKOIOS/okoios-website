@@ -1,7 +1,11 @@
 import { COMPANY_LONG_NAME, COMPANY_TAGLINE } from '../utils/constants';
 import NextHead from 'next/head';
+import { useCookies } from 'react-cookie';
 
 export default function Head() {
+  const [cookies] = useCookies(['cookies-allowed']);
+  const isCookiesAllowed = cookies['cookies-allowed'] === 'true';
+
   return (
     <NextHead>
       <title>
@@ -25,6 +29,25 @@ export default function Head() {
         href="/favicon-16x16.png"
       />
       <link rel="manifest" href="/site.webmanifest" />
+      {isCookiesAllowed && (
+        <>
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-JGQCTG02TZ"
+          ></script>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JGQCTG02TZ');
+`,
+            }}
+          />
+        </>
+      )}
     </NextHead>
   );
 }

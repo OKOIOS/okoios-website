@@ -1,4 +1,5 @@
 import BusinessManagersSection from '../components/BusinessManagersSection';
+import CookieNotice from '../components/CookieNotice';
 import Footer from '../components/Footer';
 import Head from '../components/Head';
 import Header from '../components/Header';
@@ -18,7 +19,7 @@ export default function About() {
       <div className="bg-moon bg-top bg-moon-size bg-no-repeat h-968 w-full absolute top-0 filter grayscale z-0"></div>
       <Header />
       <main className="text-center text-oklavishwhite relative z-10">
-        <section className="py-32 px-4">
+        <div className="py-32 px-4">
           <Container>
             <div className="max-w-2xl mx-auto">
               <h1 className="text-okwhite font-bold text-4xl xl:text-6xl mb-6">
@@ -71,10 +72,11 @@ export default function About() {
               </div>
             </div>
           </Container>
-        </section>
+        </div>
         <BusinessManagersSection />
       </main>
       <Footer />
+      <CookieNotice />
     </>
   );
 }
