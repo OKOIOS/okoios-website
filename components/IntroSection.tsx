@@ -10,7 +10,7 @@ export default function IntroSection() {
   return (
     <section className="relative py-16 md:py-32 lg:py-52">
       <Container>
-        <div className="xl:max-w-3xl lg:mx-0 mx-auto max-w-xl relative z-20 lg:text-left text-center mb-12 px-4">
+        <div className="xl:max-w-4xl lg:mx-0 mx-auto max-w-xl relative z-20 lg:text-left text-center mb-12 px-4">
           <span className="border-okred lg:border-l-8 p-2 pl-5 block text-sm mb-6">
             {COMPANY_TAGLINE}
           </span>
@@ -20,7 +20,7 @@ export default function IntroSection() {
               {COMPANY_SHORT_NAME} is the right partner
             </span>
           </h1>
-          <div className="flex lg:justify-start justify-center">
+          <div className="flex flex-col items-center sm:flex-row space-y-4 sm:space-y-0 lg:justify-start justify-center">
             <ButtonLink href="/about" label="Know More" />
             <ButtonLink href="/#contact" label="Contact Us" />
           </div>
@@ -31,7 +31,7 @@ export default function IntroSection() {
           <Image src={Ship} alt="Ship" layout="responsive" />
           <div className="lg:block hidden bg-gradient-to-r from-okgray h-52 w-72 absolute left-0 bottom-0"></div>
         </div>
-        <div className="relative z-20 lg:rounded-xl p-8 shadow-lg bg-oklightgray">
+        <div className="relative z-20 lg:rounded-xl p-4 md:p-8 shadow-lg bg-oklightgray">
           <p className="relative leading-8 lg:text-left text-center md:text-base text-sm xl:w-3/4">
             <span className="lg:block hidden absolute -left-8 w-1.5 h-full bg-okred"></span>
             In a fast-paced digital environment, continuous development and

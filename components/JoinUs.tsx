@@ -7,6 +7,7 @@ import governanceIcon from '../public/governanceIcon.png';
 import securityIcon from '../public/securityIcon.png';
 import testingIcon from '../public/testingIcon.png';
 import Card from './Card';
+import Container from './common/Container';
 import clsx from 'clsx';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -25,25 +26,31 @@ export default function Solutions() {
     <section
       ref={ref}
       className={clsx(
-        'relative opacity-0 pt-32 mb-20 bg-okred h-waves bg-waves bg-waves-size bg-center bg-no-repeat flex justify-center items-center text-center',
+        'relative opacity-0 bg-okred bg-waves bg-cover bg-center bg-no-repeat text-center py-16 px-4 md:py-40',
         inView && 'animate-fadeIn'
       )}
     >
-      <div className="absolute z-10 flex flex-col justify-center items-center h-full w-full top-0">
-        <div className="text-okwhite w-1/2 mb-5 tracking-widest">JOIN US</div>
-        <div className="mb-5">
-          <Image src={arrowWhite} height={44} width={4} alt="" />
-        </div>
-        <div className="text-4xl font-bold text-okwhite w-1/2 mb-10">
-          Would you like to share your expertise and talents with the team?
-        </div>
-        <Link href="/careers">
-          <div className="cursor-pointer flex items-center justify-center mr-8 h-button-h w-button-w bg-button-size bg-okblack">
-            Join Now
+      <Container>
+        <div className="max-w-3xl mx-auto relative z-20">
+          <span className="text-okwhite mb-5 tracking-widest block">
+            JOIN US
+          </span>
+          <div className="mb-5">
+            <Image src={arrowWhite} height={44} width={4} alt="JOIN US" />
           </div>
-        </Link>
-      </div>
-      <div className="absolute h-full w-full top-0 flex">
+          <h2 className="text-xl md:text-4xl font-bold text-okwhite mb-10">
+            Would you like to share your expertise and talents with the team?
+          </h2>
+          <Link href="/careers">
+            <a className="inline-flex items-center justify-center relative overflow-hidden mx-auto bg-okblack px-14 py-4">
+              Join Now
+              <span className="absolute transform rotate-45 w-6 h-6 bg-okred -bottom-3 -right-3"></span>
+            </a>
+          </Link>
+        </div>
+      </Container>
+
+      <div className="absolute z-10 h-full w-full top-0 right-0 hidden md:flex">
         <div className="w-1/3  bg-gradient-to-l from-okred"></div>
         <div className="w-2/3 bg-okred"></div>
       </div>

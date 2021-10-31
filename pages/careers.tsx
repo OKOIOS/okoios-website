@@ -3,6 +3,7 @@ import Footer from '../components/Footer';
 import Head from '../components/Head';
 import Header from '../components/Header';
 import Job from '../components/Job';
+import Container from '../components/common/Container';
 import hiring from '../public/hiring.png';
 import '@fontsource/montserrat/600.css';
 import '@fontsource/montserrat/700.css';
@@ -15,25 +16,35 @@ export default function Home({ jobs }) {
   return (
     <>
       <Head />
-      <div className="flex flex-col justify-between bg-okgray min-h-screen font-body font-light text-oklavishwhite relative w-full">
+      <div className="bg-okgray font-light text-oklavishwhite relative">
         <div className="bg-career-heading bg-top bg-career-heading-size bg-no-repeat h-968 w-full absolute top-0 opacity-5 z-0"></div>
         <Header />
-        <main className="text-center mb-32 relative z-10 w-1366 m-auto">
-          <h1 className="text-okwhite font-semibold text-4xl mb-10">
-            Current openings
-          </h1>
-          <p className="w-1/2 m-auto mb-32 text-xl">
-            Please review our open positions and apply to the positions that
-            match your qualifications.
-          </p>
-          <div className="mb-32">
-            <Image src={hiring} alt="Hiring" width={796} height={158} />
-          </div>
-          <div className="w-5/6 m-auto text-left">
-            {jobs.map((job) => (
-              <Job job={job} key={job.reference} />
-            ))}
-          </div>
+        <main className="text-center px-4 py-6 md:mt-0 mt-20 sm:py-16 lg:py-32 relative z-10">
+          <Container>
+            <div className="max-w-3xl mx-auto">
+              <h1 className="text-okwhite font-semibold text-3xl xl:text-5xl mb-10">
+                Current openings
+              </h1>
+              <p className="mb-32 text-xl lg:text-2xl">
+                Please review our open positions and apply to the positions that
+                match your qualifications.
+              </p>
+              <div className="mb-32">
+                <Image
+                  src={hiring}
+                  alt="Hiring"
+                  width={796}
+                  height={158}
+                  layout="responsive"
+                />
+              </div>
+            </div>
+            <div className="xl:max-w-6xl max-w-4xl mx-auto">
+              {jobs.map((job) => (
+                <Job job={job} key={job.reference} />
+              ))}
+            </div>
+          </Container>
         </main>
         <Footer />
       </div>

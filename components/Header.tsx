@@ -1,9 +1,11 @@
+import Waves from '../public/bg-waves.png';
 import buttonBgRed from '../public/button-bg-okred.png';
 import logo from '../public/logo.png';
 import { COMPANY_LONG_NAME } from '../utils/constants';
 import Container from './common/Container';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { useState } from 'react';
 
 export default function Header() {
@@ -12,9 +14,15 @@ export default function Header() {
   const toggleMenu = () => {
     setToggle(!toggle);
   };
+  let history = useRouter();
+
   return (
-    <div className="sticky left-0 top-0 z-30 bg-okgray">
-      <header className="p-4 shadow">
+    <div
+      className={`sticky left-0 top-0 z-30 ${
+        history.pathname === '/' ? 'bg-okgray' : 'bg-oktransparent'
+      }`}
+    >
+      <header className="p-4">
         <Container>
           <div className="flex justify-between items-center">
             {/* Logo  */}
@@ -33,9 +41,26 @@ export default function Header() {
             {/* Logo  */}
 
             {/* Navigation  */}
-            <nav className="">
-              <button onClick={toggleMenu} className="md:hidden block">
-                Open
+            <nav>
+              <button
+                onClick={toggleMenu}
+                className="md:hidden relative overflow-hidden block bg-okred border-none rounded-none p-0.5"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6 text-okgray"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+                <span className="block absolute transform rotate-45 w-3 h-3 bg-okgray -bottom-1.5 -right-1.5"></span>
               </button>
 
               <ul
@@ -45,9 +70,22 @@ export default function Header() {
               >
                 <button
                   onClick={toggleMenu}
-                  className="md:hidden block absolute top-6 right-6"
+                  className="md:hidden block text-okgray absolute top-6 right-6"
                 >
-                  Close
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
                 </button>
 
                 <li>
@@ -79,7 +117,6 @@ export default function Header() {
                   </Link>
                 </li>
                 <li className="relative overflow-hidden">
-                  {/* <Image src={buttonBgRed} alt="" height={62} width={185} /> */}
                   <Link href="/#contact">
                     <a className="block font-semibold md:font-light md:text-base text-3xl md:px-8 xl:px-12 md:py-3 xl:py-5 bg-okred">
                       <span>Contact Us</span>
@@ -87,6 +124,7 @@ export default function Header() {
                     </a>
                   </Link>
                 </li>
+                <div className="md:hidden block absolute h-60 sm:h-80 bg-waves bg-cover bg-center w-full bottom-0 left-0"></div>
               </ul>
             </nav>
           </div>

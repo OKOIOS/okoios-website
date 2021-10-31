@@ -1,7 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
 
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+.solution-card {
+}
+.solution-card .back {
+  opacity: 0;
+  left: -100%;
+}
+.solution-card:hover .back {
+  opacity: 1;
+  left: 0;
+}
+.carousel.carousel-slider {
+  overflow: unset !important;
+}
+.carousel .slide {
+  margin: 0 0.6rem;
+}
 @layer base {
   html {
     scroll-behavior: smooth;

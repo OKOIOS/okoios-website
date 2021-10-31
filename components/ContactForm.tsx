@@ -33,73 +33,61 @@ export default function ContactForm(): React.ReactElement {
       <div
         className={clsx(formState !== null && 'opacity-10 pointer-events-none')}
       >
-        <label className="border-oklavishwhite border-b-1 text-oklavishwhite flex items-center justify-between block pb-3 mb-3">
-          <span>
-            Name<span className="text-okred ml-1">*</span>
-          </span>
+        <div className="mb-4">
           <input
-            className="bg-oktransparent focus:outline-none focus:bg-oklightgray hover:bg-oklightgray flex-auto p-1 pl-2 ml-4 border-0 rounded"
             type="text"
             name="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
+            placeholder="Name"
+            className="bg-oktransparent focus:outline-none focus:bg-oklightgray hover:bg-oklightgray p-2 pl-0 border-oklavishwhite border-b-1 w-full block rounded-none"
           />
-        </label>
-        <label className="border-oklavishwhite border-b-1 text-oklavishwhite flex items-center justify-between block pb-3 mb-3">
-          <span>Company</span>
+        </div>
+
+        <div className="mb-4">
           <input
-            className="bg-oktransparent focus:outline-none focus:bg-oklightgray hover:bg-oklightgray flex-auto p-1 pl-2 ml-4 border-0 rounded"
             type="text"
             name="company"
             value={company}
             onChange={(e) => setCompany(e.target.value)}
+            required
+            placeholder="Company"
+            className="bg-oktransparent focus:outline-none focus:bg-oklightgray hover:bg-oklightgray p-2 pl-0 border-oklavishwhite border-b-1 w-full block rounded-none"
           />
-        </label>
-        <label className="border-oklavishwhite border-b-1 text-oklavishwhite flex items-center justify-between block pb-3 mb-3">
-          <span>
-            E-mail<span className="text-okred ml-1">*</span>
-          </span>
+        </div>
+
+        <div className="mb-4">
           <input
-            className="bg-oktransparent focus:outline-none focus:bg-oklightgray hover:bg-oklightgray flex-auto p-1 pl-2 ml-4 border-0 rounded"
             type="email"
             name="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
+            placeholder="E-mail"
+            className="bg-oktransparent focus:outline-none focus:bg-oklightgray hover:bg-oklightgray p-2 pl-0 border-oklavishwhite border-b-1 w-full block rounded-none"
           />
-        </label>
-        <label className="hidden border-oklavishwhite border-b-1 text-oklavishwhite block pb-3 mb-3 mb-10">
-          <div>
-            Website<span className="text-okred ml-1">*</span>
-          </div>
-          <input
-            className="bg-oktransparent focus:outline-none focus:bg-oklightgray hover:bg-oklightgray flex-auto p-1 pl-2 ml-4 border-0 rounded"
-            type="text"
-            name="website"
-            value={website}
-            placeholder="please don't edit"
-            onChange={(e) => setWebsite(e.target.value)}
-          />
-        </label>
-        <label className="border-oklavishwhite border-b-1 text-oklavishwhite block pb-3 mb-10">
-          <div>
-            Message<span className="text-okred ml-1">*</span>
-          </div>
+        </div>
+
+        <div className="mb-4">
           <textarea
-            className="bg-oktransparent focus:outline-none focus:bg-oklightgray hover:bg-oklightgray flex-auto w-full h-32 p-1 pl-2 mt-4 border-0 rounded"
+            name="message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             required
+            placeholder="Message"
+            rows={6}
+            className="bg-oktransparent focus:outline-none focus:bg-oklightgray hover:bg-oklightgray p-2 pl-0 border-oklavishwhite border-b-1 w-full block rounded-none"
           />
-        </label>
+        </div>
 
-        <input
+        <button
           type="submit"
-          name="submit"
-          value="Send Now"
-          className="bg-oktransparent cursor-pointer flex items-center justify-center mr-8 h-button-h w-button-w bg-button-outline bg-button-size hover:bg-button active:bg-button focus:bg-button"
-        />
+          className="bg-oktransparent hover:bg-okred transition-all mt-4 border border-okred px-14 py-4 relative"
+        >
+          Send Now
+          <span className="w-4 h-4 block absolute -bottom-2 -right-2 border-l bg-oklightgray border-okred transform rotate-45"></span>
+        </button>
       </div>
       {formState === 'loading' && (
         <div className="flex items-center justify-center animate-pulse absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
