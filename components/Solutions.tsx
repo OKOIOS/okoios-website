@@ -1,5 +1,6 @@
 import Card from '../components/Card';
 import analyticsIcon from '../public/analysisIcon.png';
+import ArrowRed from '../public/arrow-red.png';
 import blockchainIcon from '../public/blockchainIcon.png';
 import businessIcon from '../public/businessIcon.png';
 import cloudIcon from '../public/cloudIcon.png';
@@ -30,7 +31,7 @@ export default function Solutions() {
   const solutionData = [
     {
       id: 1,
-      title: 'Data Analytics & AI/ML Solutions',
+      title: 'Data Analytics & \nAI/ML Solutions',
       icon: analyticsIcon,
       iconBgcolor: 'bg-oktransparentorange',
       shortDetails:
@@ -48,7 +49,7 @@ export default function Solutions() {
     },
     {
       id: 2,
-      title: 'Design & Development',
+      title: 'Design & \nDevelopment',
       icon: securityIcon,
       iconBgcolor: 'bg-oktransparentorange',
       shortDetails:
@@ -63,7 +64,7 @@ export default function Solutions() {
     },
     {
       id: 3,
-      title: 'Testing and Quality Management',
+      title: 'Testing and Quality \nManagement',
       icon: testingIcon,
       iconBgcolor: 'bg-oktransparentgreen',
       shortDetails:
@@ -77,7 +78,7 @@ export default function Solutions() {
     },
     {
       id: 4,
-      title: 'Business Applications & Processes',
+      title: 'Business Applications & \nProcesses',
       icon: businessIcon,
       iconBgcolor: 'bg-oktransparentpurple',
       shortDetails:
@@ -161,15 +162,20 @@ export default function Solutions() {
   return (
     <section
       ref={ref}
-      className={clsx('opacity-0 pt-32 mb-32 px-4', inView && 'animate-fadeIn')}
+      className={clsx(
+        'opacity-0  pt-20 md:pt-32 mb-32 px-4',
+        inView && 'animate-fadeIn'
+      )}
     >
       <Container>
-        <h1 className="text-okred text-sm tracking-widest mb-3">
-          <a id="solutions">SOLUTIONS</a>
-        </h1>
-        <p className="text-okwhite text-2xl md:text-4xl font-bold mb-10">
-          End to End Solution Provider
-        </p>
+        <div className="md:text-left text-center">
+          <h1 className="text-okred text-sm tracking-widest mb-3">
+            <a id="solutions">SOLUTIONS</a>
+          </h1>
+          <p className="text-okwhite text-2xl md:text-4xl font-bold mb-10">
+            End to End Solution Provider
+          </p>
+        </div>
         <div className="hidden md:grid gap-4 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2">
           {solutionData?.map((solution) => (
             <SolutionCard key={solution.id} {...solution} />
@@ -179,7 +185,7 @@ export default function Solutions() {
           className="md:hidden block"
           showThumbs={false}
           showIndicators={false}
-          autoPlay={true}
+          autoPlay={false}
           infiniteLoop={true}
           interval={3000}
           centerMode={true}
@@ -191,9 +197,9 @@ export default function Solutions() {
               <button
                 type="button"
                 onClick={onClickHandler}
-                className="absolute -bottom-10 left-1/2 text-okred"
+                className="absolute -bottom-20 left-1/2 text-okred"
               >
-                <CgArrowLongRight className="text-4xl" />
+                <CgArrowLongRight className="text-6xl" />
               </button>
             )
           }
@@ -202,9 +208,9 @@ export default function Solutions() {
               <button
                 type="button"
                 onClick={onClickHandler}
-                className="absolute -bottom-10 left-1/2 text-okred -ml-20"
+                className="absolute -bottom-20 left-1/2 text-okred -ml-20"
               >
-                <CgArrowLongLeft className="text-4xl" />
+                <CgArrowLongLeft className="text-6xl" />
               </button>
             )
           }

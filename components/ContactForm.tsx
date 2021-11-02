@@ -83,7 +83,7 @@ export default function ContactForm(): React.ReactElement {
 
         <button
           type="submit"
-          className="bg-oktransparent hover:bg-okred transition-all mt-4 border border-okred px-14 py-4 relative"
+          className="bg-oktransparent hover:bg-okred transition-all mt-4 border border-okred md:text-base text-xs px-9 md:px-14 py-3 md:py-5 relative"
         >
           Send Now
           <span className="w-4 h-4 block absolute -bottom-2 -right-2 border-l bg-oklightgray border-okred transform rotate-45"></span>

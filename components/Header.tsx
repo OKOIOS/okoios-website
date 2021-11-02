@@ -14,6 +14,7 @@ export default function Header() {
   const toggleMenu = () => {
     setToggle(!toggle);
   };
+
   let history = useRouter();
 
   return (
@@ -64,7 +65,7 @@ export default function Header() {
               </button>
 
               <ul
-                className={`md:items-center items-start md:pl-0 pl-10 flex md:flex-row flex-col md:justify-start justify-center text-okwhite space-y-5 md:space-y-0 md:space-x-6 lg:space-x-10 xl:space-x-14 md:relative absolute w-full md:h-auto md:bg-oktransparent bg-okred top-0 h-screen transition-all ${
+                className={`md:items-center z-20 items-start md:pl-0 pl-10 flex md:flex-row flex-col md:justify-start justify-center text-okwhite space-y-8 md:space-y-0 md:space-x-6 lg:space-x-10 xl:space-x-14 md:relative absolute w-full md:h-auto md:bg-oktransparent bg-okred top-0 h-screen transition-all ${
                   toggle ? 'left-[calc(-50rem+0vw)] md:left-0' : 'left-0'
                 }`}
               >
@@ -97,14 +98,20 @@ export default function Header() {
                 </li>
                 <li>
                   <Link href="/#services">
-                    <a className="font-semibold md:font-light md:text-base text-3xl">
+                    <a
+                      className="font-semibold md:font-light md:text-base text-3xl"
+                      onClick={toggleMenu}
+                    >
                       Services
                     </a>
                   </Link>
                 </li>
                 <li>
                   <Link href="/#solutions">
-                    <a className="font-semibold md:font-light md:text-base text-3xl">
+                    <a
+                      className="font-semibold md:font-light md:text-base text-3xl"
+                      onClick={toggleMenu}
+                    >
                       Solutions
                     </a>
                   </Link>
@@ -118,13 +125,18 @@ export default function Header() {
                 </li>
                 <li className="relative overflow-hidden">
                   <Link href="/#contact">
-                    <a className="block font-semibold md:font-light md:text-base text-3xl md:px-8 xl:px-12 md:py-3 xl:py-5 bg-okred">
+                    <a
+                      onClick={toggleMenu}
+                      className="block font-semibold md:font-light md:text-base text-3xl md:px-8 xl:px-12 md:py-3 xl:py-5 bg-okred"
+                    >
                       <span>Contact Us</span>
                       <span className="md:block hidden absolute transform rotate-45 w-6 h-6  bg-okgray -bottom-3 -right-3"></span>
                     </a>
                   </Link>
                 </li>
-                <div className="md:hidden block absolute h-60 sm:h-80 bg-waves bg-cover bg-center w-full bottom-0 left-0"></div>
+                {toggle ? null : (
+                  <div className="md:hidden block absolute h-[250px] w-full bottom-0 left-0 bg-waves bg-cover bg-center"></div>
+                )}
               </ul>
             </nav>
           </div>

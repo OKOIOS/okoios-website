@@ -25,28 +25,28 @@ export default function About() {
               <h1 className="text-okwhite font-bold text-4xl xl:text-6xl mb-6">
                 We are {COMPANY_SHORT_NAME}
               </h1>
-              <p className="mb-10">
+              <p className="mb-10 md:text-base text-sm leading-loose">
                 OKOIOS brings a dynamic alliance between the objectives of the
                 client and the solutions of the experts.
               </p>
             </div>
-            <div className="mb-10">
+            <div className="mb-10 md:block hidden">
               <Image src={arrowRed} alt="Hiring" width={7} height={54} />
             </div>
-            <p className="max-w-3xl mx-auto mb-10 text-okwhite text-sm sm:text-base lg:text-2xl">
+            <p className="max-w-3xl font-light mx-auto md:mt-0 mt-20 mb-10 text-okwhite text-sm sm:text-base lg:text-2xl leading-loose lg:leading-8">
               Through our agile consulting approach, we offer service levels and
               competences adapted to your needs.
             </p>
-            <div className="lg:hidden block w-1/2 mx-auto mb-8">
+            <div className="lg:hidden block w-[163px] sm:w-1/2 mx-auto mb-8">
               <Image src={centeredEllipsisSmall} layout="responsive" />
             </div>
             <div className="grid gap-4 lg:grid-cols-3 xl:grid-cols-7">
-              <div className="xl:col-span-2 lg:text-right text-center col-span-1 relative lg:top-1/4 lg:order-1 order-2 lg:py-0 py-10 my-6">
+              <div className="xl:col-span-2 lg:text-right text-center col-span-1 relative lg:top-1/4 lg:order-1 order-2 lg:py-0 py-14 lg:my-0 my-6">
                 <span className="lg:hidden block absolute top-0 w-0.5 h-8 bg-okred left-0 right-0 mx-auto"></span>
-                <h6 className="text-okwhite font-semibold mb-2 text-2xl">
+                <h6 className="text-okwhite font-semibold mb-3 text-2xl">
                   We plan
                 </h6>
-                <p className="text-xl">
+                <p className="text-base sm:text-xl">
                   Analyse, Design, Implement, Test, Integrate & Maintain
                 </p>
                 <span className="lg:hidden block absolute bottom-0 w-0.5 h-8 bg-okred left-0 right-0 mx-auto"></span>
@@ -56,19 +56,21 @@ export default function About() {
                   <Image src={centeredEllipsis} layout="responsive" />
                 </div>
 
-                <h6 className="text-okwhite font-semibold mb-2 text-2xl">
+                <h6 className="text-okwhite font-semibold mb-3 text-2xl">
                   We enable
                 </h6>
-                <p className="text-xl">
+                <p className="text-base sm:text-xl">
                   The delivery of continuous innovation and improvements,
                   assisting you to reach your objectives.
                 </p>
               </div>
               <div className="xl:col-span-2 lg:text-left text-center col-span-1 relative lg:top-1/4 order-3">
-                <h6 className="text-okwhite font-semibold mb-2 text-2xl">
+                <h6 className="text-okwhite font-semibold mb-3 text-2xl">
                   We assist
                 </h6>
-                <p className="text-xl">you in every step of your projects.</p>
+                <p className="text-base sm:text-xl">
+                  you in every step of your <br /> projects.
+                </p>
               </div>
             </div>
           </Container>

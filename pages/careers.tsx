@@ -40,8 +40,9 @@ export default function Home({ jobs }) {
                 />
               </div>
             </div>
-            <h3 className="text-2xl mb-6 font-bold md:text-left">General</h3>
             <div className="xl:max-w-6xl max-w-4xl mx-auto">
+              <h3 className="text-2xl mb-6 font-bold md:text-left">General</h3>
+
               {jobs.map((job) => (
                 <Job job={job} key={job.reference} />
               ))}

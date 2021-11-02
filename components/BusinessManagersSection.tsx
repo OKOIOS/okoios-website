@@ -43,7 +43,7 @@ export default function BusinessManagersSection() {
         <h1 className="text-okwhite text-center font-bold text-3xl md:text-5xl mb-40">
           Our Business Managers
         </h1>
-        <div className="grid md:grid-cols-2 gap-40 md:gap-5 max-w-6xl mx-auto relative z-20 px-4">
+        <div className="flex md:flex-row flex-col justify-center md:space-y-0 space-y-40 md:space-x-10 mx-auto relative z-20 px-4">
           {profiles?.map((profile) => (
             <ProfileCard key={profile.id} {...profile} />
           ))}

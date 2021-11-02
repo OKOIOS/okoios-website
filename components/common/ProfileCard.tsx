@@ -17,14 +17,14 @@ export default function ProfileCard({
 }) {
   return (
     <>
-      <div className="bg-oklightgray shadow-lg rounded-xl p-6 relative md:text-left text-center">
-        <div className="absolute -top-20 left-0 right-0 md:right-auto">
+      <div className="bg-oklightgray shadow-lg rounded-xl p-6 relative md:text-left text-center md:max-w-[565px] lg:h-[609px] w-full">
+        <div className="absolute -top-20 left-0 md:left-10 right-0 md:right-auto">
           <Image src={image} alt={name} height={160} width={160} />
         </div>
-        <div className="pt-20">
-          <h5 className="text-okwhite text-2xl font-bold mb-3">{name}</h5>
-          <p className="mb-6 md:mb-12 xl:mb-20">“{details}”</p>
-          <ul className="flex space-x-6 items-center md:justify-start justify-center">
+        <div className="pt-28">
+          <h5 className="text-okwhite text-2xl font-bold mb-4">{name}</h5>
+          <p className="mb-24 leading-relaxed text-xl">“{details}”</p>
+          <ul className="flex space-x-6 items-center md:justify-start justify-center absolute md:left-6 left-0 md:right-auto right-0 md:mx-0 mx-auto bottom-10 md:bottom-6">
             <li>
               <Link href={linkedin}>
                 <a className="inline-flex justify-center items-center text-okwhite w-10 h-10 bg-okred hover:bg-okblack transition-all rounded-full">
@@ -32,13 +32,13 @@ export default function ProfileCard({
                 </a>
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link href={facebook}>
                 <a className="inline-flex justify-center items-center text-okwhite w-10 h-10 bg-okred hover:bg-okblack transition-all rounded-full">
                   <FaFacebookF />
                 </a>
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

@@ -5,43 +5,44 @@ module.exports = {
   theme: {
     extend: {
       width: {
-        '1366': '1366px',
+        1366: '1366px',
         'button-w': '193px',
-       },
-       minWidth: {
-         '1366': '1366px',
-        },
+      },
+      minWidth: {
+        1366: '1366px',
+      },
       height: {
-       '968': '968px',
-       'button-h': '64px',
-       'waves': '515px'
+        968: '968px',
+        'button-h': '64px',
+        waves: '515px',
       },
       fontFamily: {
-        'body': ['Montserrat']
+        body: ['Montserrat'],
       },
       letterSpacing: {
         widest: '.25em',
       },
       borderWidth: {
-        '1': '1px',
+        1: '1px',
       },
       animation: {
-        fadeIn: "fadeIn 1s ease-in forwards"
+        fadeIn: 'fadeIn 1s ease-in forwards',
       },
       keyframes: {
         fadeIn: {
-          "0%": { opacity: 0 },
-          "100%": { opacity: 1 }
-        }
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1 },
+        },
       },
       backgroundImage: {
-        'ship': "url('/ship.png')",
+        ship: "url('/ship.png')",
         'career-heading': "url('/careers-heading.png')",
-        'button-outline': "url(/button-bg-okred-outline.png)",
-        'button': "url(/button-bg-okred.png)",
-        'waves': "url(/bg-waves.png)",
-        'moon': "url(/bg-moon.png)",
-        'contact': "url(/contact-bg.png)"
+        'button-outline': 'url(/button-bg-okred-outline.png)',
+        button: 'url(/button-bg-okred.png)',
+        waves: 'url(/bg-waves.png)',
+        moon: 'url(/bg-moon.png)',
+        contact: 'url(/contact-bg.png)',
+        geneva: 'url(/geneva.png)',
       },
       backgroundSize: {
         'ship-size': '1219px 707px',
@@ -49,9 +50,9 @@ module.exports = {
         'button-size': '193px 64px',
         'waves-size': '2438px 515px',
         'moon-size': '960px 376px',
-        'contact-size': '1337px 870px'
+        'contact-size': '1337px 870px',
       },
-   },
+    },
     colors: {
       oktransparent: 'transparent',
       okgray: '#1F2125',
@@ -69,11 +70,11 @@ module.exports = {
       oktransparentyellow: 'rgba(255, 203, 17, 0.1)',
       oktransparentblue: 'rgba(17, 27, 255, 0.1)',
       oklightblue: '#c7cdd8',
-      okdarkblue: '#3c475c'
+      okdarkblue: '#3c475c',
     },
   },
   variants: {
     extend: {},
   },
   plugins: [],
-}
+};

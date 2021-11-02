@@ -18,50 +18,56 @@ export default function Solutions() {
 
   return (
     <section
+      id="services"
       ref={ref}
       className={clsx(
-        'opacity-0 px-4 py-10 md:py-20 lg:py-400',
+        'opacity-0 relative px-4 py-5 md:py-20',
         inView && 'animate-fadeIn'
       )}
     >
-      <a id="services" className="invisible h-96"></a>
-
+      <div
+        className="absolute -left-1/4 -top-40 rounded-full w-full max-w-4xl h-[900px] xl:block hidden"
+        style={{
+          background:
+            'radial-gradient(50% 50% at 50% 50%, #000000 0%, rgba(0, 0, 0, 0) 100%)',
+        }}
+      ></div>
       <Container>
         <div className="text-center max-w-2xl mx-auto">
           <h2 className="font-semibold text-2xl md:text-3xl lg:text-5xl text-okwhite mb-6">
             Consulting Service Levels
           </h2>
-          <p className="pb-20">
+          <p className="pb-10 md:pb-20">
             We offer 4 levels of consulting services adapted to clients’
             specific needs and requests.
           </p>
         </div>
-        <div className="relative lg:block grid gap-4 sm:grid-cols-2">
-          <div className="bg-oklightgray rounded-xl shadow-2xl lg:max-w-xs xl:max-w-sm w-full md:text-left text-center md:pl-8 pl-4 pr-4 py-6 relative lg:absolute left-0 top-0">
+        <div className="relative lg:block grid gap-6 sm:grid-cols-2">
+          <div className="bg-oklightgray rounded-xl shadow-2xl lg:max-w-xs xl:max-w-sm w-full md:text-left text-center md:pl-8 pl-2 pr-2 py-6 relative lg:absolute left-0 top-0">
             <span className="absolute w-3 h-3 rounded-full mx-auto left-0 right-0 -top-1.5 bg-okred lg:hidden block"></span>
             <h4 className="text-okwhite font-bold mb-1">UT Expert Support</h4>
             <p className="o">Expert Support on a time & material basis</p>
           </div>
-          <div className="bg-oklightgray rounded-xl shadow-2xl lg:max-w-xs xl:max-w-sm w-full md:text-left text-center md:pl-8 pl-4 pr-4 py-6 relative lg:absolute left-0 bottom-0">
+          <div className="bg-oklightgray rounded-xl shadow-2xl lg:max-w-xs xl:max-w-sm w-full md:text-left text-center md:pl-8 pl-2 pr-2 py-6 relative lg:absolute left-0 bottom-0">
             <span className="absolute w-3 h-3 rounded-full mx-auto left-0 right-0 -top-1.5 bg-okred lg:hidden block"></span>
             <h4 className="text-okwhite font-bold mb-1">Managed Service</h4>
             <p className="o">Multi-skilled team support on various projects</p>
           </div>
 
-          <div className="bg-oklightgray rounded-xl shadow-2xl lg:max-w-xs xl:max-w-sm w-full md:text-left text-center md:pl-8 pl-4 pr-4 py-6 relative lg:absolute right-0 top-0">
+          <div className="bg-oklightgray rounded-xl shadow-2xl lg:max-w-xs xl:max-w-sm w-full md:text-left text-center md:pl-8 pl-2 pr-2 py-6 relative lg:absolute right-0 top-0">
             <span className="absolute w-3 h-3 rounded-full left-0 right-0 mx-auto -top-1.5 bg-okred lg:hidden block"></span>
             <h4 className="text-okwhite font-bold mb-1">
               IT Expert-Team Support
             </h4>
             <p className="o">Multi-skilled team support on various projects</p>
           </div>
-          <div className="bg-oklightgray rounded-xl shadow-2xl lg:max-w-xs xl:max-w-sm w-full md:text-left text-center md:pl-8 pl-4 pr-4 py-6 relative lg:absolute right-0 bottom-0">
+          <div className="bg-oklightgray rounded-xl shadow-2xl lg:max-w-xs xl:max-w-sm w-full md:text-left text-center md:pl-8 pl-2 pr-2 py-6 relative lg:absolute right-0 bottom-0">
             <span className="absolute w-3 h-3 rounded-full left-0 right-0 mx-auto -top-1.5 bg-okred lg:hidden block"></span>
             <h4 className="text-okwhite font-bold mb-1">Fixed-price Project</h4>
             <p className="o">
-              A Projecy? <br />
-              <Link href="/#">
-                <a className="inline-block mr-1 text-okred">Lets talk</a>
+              <span className="sm:block inline-block"> A Projecy? </span>
+              <Link href="/#contact">
+                <a className="inline-block mx-1 text-okred">Lets talk</a>
               </Link>
               about it
             </p>

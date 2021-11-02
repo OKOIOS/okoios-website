@@ -1,9 +1,14 @@
-import whiteLogo from '../public/logo-white.png';
+import redLogo from '../public/logo.png';
 import { COMPANY_LONG_NAME } from '../utils/constants';
 import Container from './common/Container';
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaTwitter,
+} from 'react-icons/fa';
 
 export default function Footer() {
   return (
@@ -13,7 +18,7 @@ export default function Footer() {
           <Link href="/#top">
             <a className="block sm:mb-0 mb-12 sm:mx-0 mx-auto sm:text-left text-center w-28 md:w-52">
               <Image
-                src={whiteLogo}
+                src={redLogo}
                 alt={`${COMPANY_LONG_NAME} logo`}
                 layout="responsive"
               />
@@ -30,11 +35,11 @@ export default function Footer() {
                     target="_blank"
                     className="flex items-center justify-center w-7 h-7 text-sm rounded-full bg-oklightergray p-1 transition-all hover:scale-125 hover:bg-oktransparentgreen"
                   >
-                    <FaFacebookF />
+                    <FaLinkedinIn />
                   </a>
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="/">
                   <a
                     target="_blank"
@@ -53,7 +58,7 @@ export default function Footer() {
                     <FaInstagram />
                   </a>
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

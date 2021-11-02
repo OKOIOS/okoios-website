@@ -18,7 +18,7 @@ export default function ContactSection(): React.ReactElement {
   return (
     <section
       className={clsx(
-        'relative opacity-0 bg-contact bg-cover bg-no-repeat py-32 px-4',
+        'relative opacity-0 md:bg-contact bg-geneva bg-mobileSize bg-no-repeat py-16 md:py-32 px-4',
         inView && 'animate-fadeIn'
       )}
       ref={ref}
@@ -73,7 +73,7 @@ export default function ContactSection(): React.ReactElement {
             </address>
           </div>
           <div className="relative z-10 md:max-w-xl ml-auto w-full md:order-2 order-1">
-            <div className="md:hidden block">
+            <div className="md:hidden block md:pt-0 pt-12">
               <h2 className="text-3xl lg:text-5xl font-bold mb-3 text-okwhite">
                 Get in touch with us
               </h2>

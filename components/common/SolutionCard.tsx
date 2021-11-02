@@ -19,7 +19,9 @@ export default function SolutionCard({
           >
             <Image src={icon} alt={title} layout="responsive" />
           </div>
-          <h6 className="font-bold text-lg my-3">{title}</h6>
+          <h6 className="font-bold text-lg my-3 whitespace-pre-wrap">
+            {title}
+          </h6>
           <p className="text-sm leading-relaxed">{shortDetails}</p>
         </div>
         <div className="absolute inset-0 transition-all bg-okred text-okwhite p-8 w-full h-full overflow-auto back">

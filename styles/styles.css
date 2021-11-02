@@ -2,10 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'Montserrat', sans-serif;
 }
+
 .solution-card {
 }
 .solution-card .back {
@@ -29,5 +32,13 @@ body {
 
   .job-description ul {
     @apply ml-10 list-disc;
+  }
+}
+.bg-mobileSize {
+  background-size: cover;
+}
+@media screen and (max-width: 768px) {
+  .bg-mobileSize {
+    background-size: 100% 170px;
   }
 }
