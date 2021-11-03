@@ -23,7 +23,7 @@ export default function Header() {
         history.pathname === '/' ? 'bg-okgray' : 'bg-oktransparent'
       }`}
     >
-      <header className="p-4">
+      <header className="p-4 md:py-6">
         <Container>
           <div className="flex justify-between items-center">
             {/* Logo  */}
