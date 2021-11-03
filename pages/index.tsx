@@ -14,26 +14,22 @@ export default function Home() {
   return (
     <>
       <Head />
-      <section
-        className="bg-okgray min-h-screen relative font-body font-light text-oklavishwhite w-full"
-        id="top"
-      >
-        <Header />
 
-        <div className="xl:block hidden absolute z-50 h-[600px] w-px bg-oklightergray left-10 2xl:left-20 top-0">
-          <span className="h-20 w-px bg-okred block absolute -bottom-40"></span>
-          <span className="h-2 w-2 borde border-r border-b border-okred block absolute -bottom-40 transform rotate-45 -left-1"></span>
-        </div>
-        <main className="">
-          <IntroSection />
-          <Services />
-          <Solutions />
-          <ContactSection />
-          <JoinUs />
-        </main>
-        <Footer />
-        <CookieNotice />
-      </section>
+      <Header />
+
+      <div className="xl:block hidden absolute z-50 h-[600px] w-px bg-oklightergray left-10 2xl:left-20 top-0">
+        <span className="h-20 w-px bg-okred block absolute -bottom-40"></span>
+        <span className="h-2 w-2 borde border-r border-b border-okred block absolute -bottom-40 transform rotate-45 -left-1"></span>
+      </div>
+      <main className="">
+        <IntroSection />
+        <Services />
+        <Solutions />
+        <ContactSection />
+        <JoinUs />
+      </main>
+      <Footer />
+      <CookieNotice />
     </>
   );
 }

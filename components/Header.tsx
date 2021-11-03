@@ -65,7 +65,7 @@ export default function Header() {
               </button>
 
               <ul
-                className={`md:items-center z-20 items-start md:pl-0 pl-10 flex md:flex-row flex-col md:justify-start justify-center text-okwhite space-y-8 md:space-y-0 md:space-x-6 lg:space-x-10 xl:space-x-14 md:relative absolute w-full md:h-auto md:bg-oktransparent bg-okred top-0 h-screen transition-all ${
+                className={`md:items-center z-40 items-start md:pl-0 pl-10 flex md:flex-row flex-col md:justify-start justify-center text-okwhite space-y-8 md:space-y-0 md:space-x-6 lg:space-x-10 xl:space-x-14 md:relative absolute w-full md:h-auto md:bg-oktransparent bg-okred top-0 h-screen transition-all ${
                   toggle ? 'left-[calc(-50rem+0vw)] md:left-0' : 'left-0'
                 }`}
               >

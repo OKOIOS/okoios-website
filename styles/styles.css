@@ -14,16 +14,18 @@ body {
 .solution-card .back {
   opacity: 0;
   left: -100%;
+  visibility: hidden;
 }
 .solution-card:hover .back {
   opacity: 1;
   left: 0;
+  visibility: visible;
 }
 .carousel.carousel-slider {
   overflow: unset !important;
 }
 .carousel .slide {
-  margin: 0 0.6rem;
+  padding: 0 0.6rem;
 }
 @layer base {
   html {

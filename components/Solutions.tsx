@@ -8,20 +8,18 @@ import governanceIcon from '../public/governanceIcon.png';
 import securityIcon from '../public/securityIcon.png';
 import testingIcon from '../public/testingIcon.png';
 import Container from './common/Container';
+import Modal from './common/Modal';
 import SolutionCard from './common/SolutionCard';
 import clsx from 'clsx';
 import Image from 'next/image';
-import { CSSProperties, useState } from 'react';
+import { useState } from 'react';
 import { CgArrowLongLeft, CgArrowLongRight } from 'react-icons/cg';
-import {
-  HiOutlineArrowNarrowLeft,
-  HiOutlineArrowNarrowRight,
-} from 'react-icons/hi';
 import { useInView } from 'react-intersection-observer';
 import { Carousel } from 'react-responsive-carousel';
 
 export default function Solutions() {
   const [focusedCard, setFocusedCard] = useState<number>(null);
+  const [showModal, setShowModal] = useState<boolean>(false);
 
   const { ref, inView } = useInView({
     threshold: 0.2,
@@ -159,67 +157,94 @@ export default function Solutions() {
     },
   ];
 
+  const filterData = (id) => {
+    return solutionData.find((item) => item.id === id);
+  };
+
+  const toggleModal = (id) => {
+    setShowModal(!showModal);
+    filterData(id);
+  };
+
   return (
-    <section
-      ref={ref}
-      className={clsx(
-        'opacity-0  pt-20 md:pt-32 mb-32 px-4',
-        inView && 'animate-fadeIn'
-      )}
-    >
-      <Container>
-        <div className="md:text-left text-center">
-          <h1 className="text-okred text-sm tracking-widest mb-3">
-            <a id="solutions">SOLUTIONS</a>
-          </h1>
-          <p className="text-okwhite text-2xl md:text-4xl font-bold mb-10">
-            End to End Solution Provider
-          </p>
-        </div>
-        <div className="hidden md:grid gap-4 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2">
-          {solutionData?.map((solution) => (
-            <SolutionCard key={solution.id} {...solution} />
-          ))}
-        </div>
-        <Carousel
-          className="md:hidden block"
-          showThumbs={false}
-          showIndicators={false}
-          autoPlay={false}
-          infiniteLoop={true}
-          interval={3000}
-          centerMode={true}
-          transitionTime={1500}
-          stopOnHover={true}
-          showStatus={false}
-          renderArrowNext={(onClickHandler, hasPrev) =>
-            hasPrev && (
-              <button
-                type="button"
-                onClick={onClickHandler}
-                className="absolute -bottom-20 left-1/2 text-okred"
-              >
-                <CgArrowLongRight className="text-6xl" />
-              </button>
-            )
-          }
-          renderArrowPrev={(onClickHandler, hasPrev) =>
-            hasPrev && (
-              <button
-                type="button"
-                onClick={onClickHandler}
-                className="absolute -bottom-20 left-1/2 text-okred -ml-20"
-              >
-                <CgArrowLongLeft className="text-6xl" />
-              </button>
-            )
-          }
-        >
-          {solutionData?.map((solution) => (
-            <SolutionCard key={solution.id} {...solution} />
-          ))}
-        </Carousel>
-      </Container>
-    </section>
+    <>
+      <section
+        ref={ref}
+        className={clsx(
+          'opacity-0  pt-20 md:pt-32 mb-32 px-4',
+          inView && 'animate-fadeIn'
+        )}
+      >
+        <Container>
+          <div className="md:text-left text-center">
+            <h1 className="text-okred text-sm tracking-widest mb-3">
+              <a id="solutions">SOLUTIONS</a>
+            </h1>
+            <p className="text-okwhite text-2xl md:text-4xl font-bold mb-10">
+              End to End Solution Provider
+            </p>
+          </div>
+          <div className="hidden md:grid gap-4 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2">
+            {solutionData?.map((solution) => (
+              <SolutionCard key={solution.id} {...solution} />
+            ))}
+          </div>
+          <Carousel
+            className="md:hidden block"
+            showThumbs={false}
+            showIndicators={false}
+            autoPlay={false}
+            centerSlidePercentage={80}
+            infiniteLoop={true}
+            interval={3000}
+            centerMode={true}
+            transitionTime={1500}
+            stopOnHover={true}
+            showStatus={false}
+            renderArrowNext={(onClickHandler, hasPrev) =>
+              hasPrev && (
+                <button
+                  type="button"
+                  onClick={onClickHandler}
+                  className="absolute -bottom-20 left-[calc(+20px+50vw)] text-okred"
+                >
+                  <CgArrowLongRight className="text-6xl" />
+                </button>
+              )
+            }
+            renderArrowPrev={(onClickHandler, hasPrev) =>
+              hasPrev && (
+                <button
+                  type="button"
+                  onClick={onClickHandler}
+                  className="absolute -bottom-20 left-[calc(-20px+50vw)] text-okred -ml-20"
+                >
+                  <CgArrowLongLeft className="text-6xl" />
+                </button>
+              )
+            }
+          >
+            {solutionData?.map((solution) => (
+              <SolutionCard
+                key={solution.id}
+                {...solution}
+                onclick={() => toggleModal(solution.id)}
+              />
+            ))}
+          </Carousel>
+        </Container>
+      </section>
+      {showModal ? (
+        <Modal
+          title="Hello World"
+          lists={[
+            'Create Scalable Elegant',
+            'Modals In JavaScript or React',
+            'So, here is what we are going to be building:',
+          ]}
+          setShowModal={setShowModal}
+        />
+      ) : null}
+    </>
   );
 }

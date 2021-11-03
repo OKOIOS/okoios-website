@@ -40,7 +40,7 @@ export default function IntroSection() {
       <div className="lg:absolute right-0 z-10 2xl:bottom-0 bottom-20 lg:max-w-2xl xl:max-w-3xl 2xl:max-w-[944px] w-full">
         <div className="relative z-10">
           <Image src={Ship} alt="Ship" layout="responsive" />
-          <div className="lg:block hidden bg-gradient-to-r from-okgray h-52 w-72 absolute left-0 bottom-0"></div>
+          <div className="lg:block hidden bg-gradient-to-r from-okgray h-60 w-72 absolute left-0 bottom-0"></div>
         </div>
         <div className="relative z-20 lg:rounded-xl p-4 md:p-8 shadow-lg bg-oklightgray md:mt-0 -mt-8">
           <p className="relative leading-8 lg:text-left text-center md:text-base text-sm lg:max-w-[616px] w-full">

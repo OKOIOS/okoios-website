@@ -40,7 +40,7 @@ export default function CookieNotice() {
   }
 
   return (
-    <section className="sticky bottom-0 bg-okwhite px-4 py-2 text-okgray text-sm justify-center items-center z-10">
+    <section className="sticky bottom-0 bg-okwhite px-4 py-2 text-okgray text-sm justify-center items-center z-30">
       <Container>
         <div className="text-okdarkblue">
           <h1 className="font-semibold mb-2 text-xl">We use cookies 🍪</h1>

@@ -1,7 +1,16 @@
-import securityIcon from '../../public/securityIcon.png';
 import Image from 'next/image';
-import { BsDash } from 'react-icons/bs';
+import React from 'react';
 
+interface SolutionCardProps {
+  title: string;
+  icon: StaticImageData;
+  iconBgcolor: string;
+  shortDetails: string;
+  listTitle: string;
+  lists: string[];
+  id: number;
+  onclick?: any;
+}
 export default function SolutionCard({
   title,
   icon,
@@ -9,10 +18,14 @@ export default function SolutionCard({
   shortDetails,
   listTitle,
   lists,
-}) {
+  onclick,
+}: SolutionCardProps) {
   return (
     <>
-      <div className="shadow rounded-xl overflow-auto md:overflow-hidden cursor-pointer relative solution-card bg-oklightgray mb-2 w-full text-left md:mx-0 mx-4 h-[344px] md:h-auto">
+      <div
+        onClick={onclick}
+        className="shadow rounded-xl overflow-auto md:overflow-hidden cursor-pointer relative solution-card bg-oklightgray mb-2 w-full text-left h-[344px] transform sm:translate-x-0 translate-x-[calc(-15%+0vw)]"
+      >
         <div className="front p-6">
           <div
             className={`p-2 my-3 inline-block rounded w-16 h-16 ${iconBgcolor}`}
@@ -24,7 +37,7 @@ export default function SolutionCard({
           </h6>
           <p className="text-sm leading-relaxed">{shortDetails}</p>
         </div>
-        <div className="absolute inset-0 transition-all bg-okred text-okwhite p-8 w-full h-full overflow-auto back">
+        <div className="md:block hidden absolute inset-0 transition-all bg-okred text-okwhite p-8 w-full h-full overflow-auto back">
           <h6 className="text-lg font-bold mb-2">{listTitle}</h6>
           <ul>
             {lists?.map((list, idx) => (
