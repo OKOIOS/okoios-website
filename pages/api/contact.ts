@@ -34,7 +34,7 @@ export default async function handler(
 
     await transporter.sendMail({
       from: '"Okoios Website" <no-reply@okoios.ch>',
-      to: 'nugaaah@gmail.com',
+      to: process.env.SEND_TO,
       subject: 'New mail from okoios.ch contact form',
       text: `
       Name: ${body.name || '(empty)'}
