@@ -1,65 +1,73 @@
-import facebookLogo from '../public/facebook.png';
-import linkedinLogo from '../public/linkedin.png';
-import whiteLogo from '../public/logo-white.png';
+import redLogo from '../public/logo.png';
 import { COMPANY_LONG_NAME } from '../utils/constants';
-import '@fontsource/montserrat/300.css';
-import '@fontsource/montserrat/500.css';
+import Container from './common/Container';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaTwitter,
+} from 'react-icons/fa';
 
 export default function Footer() {
   return (
-    <footer>
-      <div className="flex justify-between m-auto w-1366 mb-16 pt-20">
-        <Link href="/#top">
-          <div className="cursor-pointer">
-            <Image
-              src={whiteLogo}
-              alt={`${COMPANY_LONG_NAME} logo`}
-              height={50}
-              width={210}
-            />
+    <footer className="text-okwhite">
+      <Container>
+        <div className="flex md:flex-row flex-col justify-between mb-16 pt-20 px-4">
+          <Link href="/#top">
+            <a className="block sm:mb-0 mb-12 sm:mx-0 mx-auto sm:text-left text-center w-28 md:w-52">
+              <Image
+                src={redLogo}
+                alt={`${COMPANY_LONG_NAME} logo`}
+                layout="responsive"
+              />
+            </a>
+          </Link>
+          <div className="">
+            <h6 className="font-bold mb-3 text-sm md:text-right text-center">
+              Follow Us
+            </h6>
+            <ul className="flex sm:justify-start justify-center space-x-4">
+              <li>
+                <Link href="/">
+                  <a
+                    target="_blank"
+                    className="flex items-center justify-center w-7 h-7 text-sm rounded-full bg-oklightergray p-1 transition-all hover:scale-125 hover:bg-oktransparentgreen"
+                  >
+                    <FaLinkedinIn />
+                  </a>
+                </Link>
+              </li>
+              {/* <li>
+                <Link href="/">
+                  <a
+                    target="_blank"
+                    className="flex items-center justify-center w-7 h-7 text-sm rounded-full bg-oklightergray p-1 transition-all hover:scale-125 hover:bg-oktransparentgreen"
+                  >
+                    <FaTwitter />
+                  </a>
+                </Link>
+              </li>{' '}
+              <li>
+                <Link href="/">
+                  <a
+                    target="_blank"
+                    className="flex items-center justify-center w-7 h-7 text-sm rounded-full bg-oklightergray p-1 transition-all hover:scale-125 hover:bg-oktransparentgreen"
+                  >
+                    <FaInstagram />
+                  </a>
+                </Link>
+              </li> */}
+            </ul>
           </div>
-        </Link>
-        <div className="flex flex-col items-end">
-          <div className="font-bold mb-3 text-sm">Follow Us</div>
-          <ul className="flex">
-            <li className="mx-3">
-              <a
-                href="#"
-                className="rounded-full w-8 h-8 bg-oklightgray flex items-center justify-center"
-              >
-                <Image
-                  src={linkedinLogo}
-                  alt="Follow us on LinkedIn"
-                  height={12}
-                  width={12}
-                />
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="rounded-full w-8 h-8 bg-oklightgray flex items-center justify-center"
-              >
-                <Image
-                  src={facebookLogo}
-                  alt="Follow us on Facebook"
-                  height={12}
-                  width={6}
-                />
-              </a>
-            </li>
-          </ul>
         </div>
+      </Container>
+      <div className="bg-oklightgray p-4">
+        <p className="text-sm text-center">
+          All Rights Reservd 2021 Okoios Consluting
+        </p>
       </div>
-      <small className=" bg-oklightgray text-oklavishwhite flex justify-center items-center w-screen h-16">
-        All Rights Reserved {new Date().getFullYear()} {COMPANY_LONG_NAME} -
-        <div className="underline ml-1">
-          <Link href="/privacy">Privacy Policy</Link>
-        </div>
-      </small>
     </footer>
   );
 }

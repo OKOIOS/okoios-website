@@ -1,7 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+}
 
+.solution-card {
+}
+.solution-card .back {
+  opacity: 0;
+  left: -100%;
+  visibility: hidden;
+}
+.solution-card:hover .back {
+  opacity: 1;
+  left: 0;
+  visibility: visible;
+}
+.carousel.carousel-slider {
+  overflow: unset !important;
+}
+.carousel .slide {
+  padding: 0 0.6rem;
+}
 @layer base {
   html {
     scroll-behavior: smooth;
@@ -9,5 +34,13 @@
 
   .job-description ul {
     @apply ml-10 list-disc;
+  }
+}
+.bg-mobileSize {
+  background-size: cover;
+}
+@media screen and (max-width: 768px) {
+  .bg-mobileSize {
+    background-size: 100% 170px;
   }
 }

@@ -1,3 +1,4 @@
+import Container from './common/Container';
 import clsx from 'clsx';
 import React, { useState } from 'react';
 import { useCookies } from 'react-cookie';
@@ -39,13 +40,13 @@ export default function CookieNotice() {
   }
 
   return (
-    <section className="sticky bottom-0 bg-okwhite p-4 text-okgray text-sm justify-center items-center z-10">
-      <div className="w-1366 m-auto">
-        <div className="w-1/2 m-auto text-okdarkblue">
-          <h1 className="font-semibold mb-5 text-xl">We use cookies 🍪</h1>
+    <section className="sticky bottom-0 bg-okwhite px-4 py-2 text-okgray text-sm justify-center items-center z-30">
+      <Container>
+        <div className="text-okdarkblue">
+          <h1 className="font-semibold mb-2 text-xl">We use cookies 🍪</h1>
           {preferencesOpen ? (
             <>
-              <div className="flex justify-between mb-5">
+              <div className="flex justify-between mb-3">
                 <a href="#" className="mr-6">
                   <label className="flex items-center font-semibold">
                     <input
@@ -120,7 +121,7 @@ export default function CookieNotice() {
             </>
           )}
         </div>
-      </div>
+      </Container>
     </section>
   );
 }
