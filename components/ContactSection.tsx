@@ -5,6 +5,7 @@ import ContactForm from './ContactForm';
 import Container from './common/Container';
 import clsx from 'clsx';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import { FaPhoneAlt } from 'react-icons/fa';
 import { MdLocationOn, MdMail } from 'react-icons/md';
@@ -42,32 +43,33 @@ export default function ContactSection(): React.ReactElement {
                   <div className="flex items-center justify-center bg-okred rounded p-1 w-12 h-12 text-okwhite">
                     <MdLocationOn className="text-3xl" />
                   </div>
-                  <p>
-                    Rue François-Versonnex 7<br />
-                    1207 Genève
-                  </p>
+
+                  <Link href="https://www.google.com/maps/place/OKOIOS/@46.2031933,6.1529813,17z/data=!3m1!4b1!4m5!3m4!1s0x478c65e9ed657801:0xc0555b5b6243a57c!8m2!3d46.2031933!4d6.15517">
+                    <a target="_blank" className="block">
+                      Rue François-Versonnex 7<br />
+                      1207 Genève
+                    </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="tel:+41000000"
-                    className="flex items-center space-x-4"
-                  >
-                    <div className="flex items-center justify-center bg-okred rounded p-1 w-12 h-12 text-okwhite">
-                      <FaPhoneAlt className="text-2xl" />
-                    </div>
-                    <span>+41 000 00 00</span>
-                  </a>
+                  <Link href="tel:+41 22 707 07 07">
+                    <a className="flex items-center space-x-4">
+                      <div className="flex items-center justify-center bg-okred rounded p-1 w-12 h-12 text-okwhite">
+                        <FaPhoneAlt className="text-2xl" />
+                      </div>
+                      <span>+41 000 00 00</span>
+                    </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="mailto:info@okoios.ch"
-                    className="flex items-center space-x-4"
-                  >
-                    <div className="flex items-center justify-center bg-okred rounded p-1 w-12 h-12 text-okwhite">
-                      <MdMail className="text-2xl" />
-                    </div>
-                    <span>info@okoios.ch</span>
-                  </a>
+                  <Link href="mailto:info@okoios.ch">
+                    <a className="flex items-center space-x-4">
+                      <div className="flex items-center justify-center bg-okred rounded p-1 w-12 h-12 text-okwhite">
+                        <MdMail className="text-2xl" />
+                      </div>
+                      <span>info@okoios.ch</span>
+                    </a>
+                  </Link>
                 </li>
               </ul>
             </address>
