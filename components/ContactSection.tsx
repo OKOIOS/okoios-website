@@ -39,15 +39,16 @@ export default function ContactSection(): React.ReactElement {
             </div>
             <address className="not-italic">
               <ul className="grid gap-6">
-                <li className="flex items-center space-x-4">
-                  <div className="flex items-center justify-center bg-okred rounded p-1 w-12 h-12 text-okwhite">
-                    <MdLocationOn className="text-3xl" />
-                  </div>
-
+                <li>
                   <Link href="https://www.google.com/maps/place/OKOIOS/@46.2031933,6.1529813,17z/data=!3m1!4b1!4m5!3m4!1s0x478c65e9ed657801:0xc0555b5b6243a57c!8m2!3d46.2031933!4d6.15517">
-                    <a target="_blank" className="block">
-                      Rue François-Versonnex 7<br />
-                      1207 Genève
+                    <a target="_blank" className="flex items-center space-x-4">
+                      <div className="flex items-center justify-center bg-okred rounded p-1 w-12 h-12 text-okwhite">
+                        <MdLocationOn className="text-3xl" />
+                      </div>
+                      <span>
+                        Rue François-Versonnex 7<br />
+                        1207 Genève
+                      </span>
                     </a>
                   </Link>
                 </li>

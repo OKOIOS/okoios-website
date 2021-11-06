@@ -37,7 +37,7 @@ export default function About() {
               Through our agile consulting approach, we offer service levels and
               competences adapted to your needs.
             </p>
-            <div className="lg:hidden block w-[163px] sm:w-1/2 mx-auto mb-8">
+            <div className="lg:hidden block w-[163px] sm:w-1/ mx-auto mb-8">
               <Image src={centeredEllipsisSmall} layout="responsive" />
             </div>
             <div className="grid gap-4 lg:grid-cols-3 xl:grid-cols-7">

@@ -8,7 +8,7 @@ import React from 'react';
 
 export default function IntroSection() {
   return (
-    <section className="relative py-16 md:py-32 lg:py-52 xl:mb-12">
+    <section className="relative pt-16 pb-16 md:pb-32 md:pt-32 lg:pt-52">
       <Container>
         <div className="xl:max-w-[805px] lg:mx-0 mx-auto max-w-sm sm:max-w-xl relative z-20 lg:text-left text-center mb-12 px-4">
           <span className="border-okred lg:border-l-8 p-2 pl-5 block text-sm mb-6">
@@ -37,7 +37,7 @@ export default function IntroSection() {
           </div>
         </div>
       </Container>
-      <div className="lg:absolute right-0 z-10 2xl:bottom-0 bottom-20 lg:max-w-2xl xl:max-w-3xl 2xl:max-w-[944px] w-full">
+      <div className="lg:absolute right-0 z-10 2xl:bottom-0 bottom-20 lg:max-w-xl xl:max-w-3xl 2xl:max-w-[944px] w-full">
         <div className="relative z-10">
           <Image src={Ship} alt="Ship" layout="responsive" />
           <div className="lg:block hidden bg-gradient-to-r from-okgray h-60 w-72 absolute left-0 bottom-0"></div>
