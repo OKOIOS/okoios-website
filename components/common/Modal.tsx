@@ -1,15 +1,23 @@
-import React from 'react';
+import React, { useRef } from 'react';
 
-export default function Modal({ title, lists, setShowModal }) {
-  const toggleModal = () => {
-    setShowModal(false);
-  };
+export default function Modal({ title, lists, onHideModal }) {
+  const wrapperRef = useRef(null);
   return (
     <>
-      <div className="md:hidden transition-all fixed z-50 inset-0 bg-oklightgray bg-opacity-50 w-full h-full flex justify-center flex-col items-center">
+      <div
+        className="md:hidden transition-all fixed z-50 inset-0 bg-oklightgray bg-opacity-50 w-full h-full flex justify-center flex-col items-center"
+        onClick={(e: React.SyntheticEvent) => {
+          // Don't hide if user clicked inside of the box
+          if (e.target === wrapperRef.current) {
+            onHideModal();
+          }
+        }}
+        id="WRAPPER"
+        ref={wrapperRef}
+      >
         <div className="m-auto relative transition-all bg-okred text-okwhite p-8 w-11/12 h-1/2 overflow-auto z-40 rounded-md">
           <button
-            onClick={toggleModal}
+            onClick={onHideModal}
             className="md:hidden block text-okwhite absolute right-4 top-4"
           >
             <svg

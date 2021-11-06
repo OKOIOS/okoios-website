@@ -17,154 +17,140 @@ import { CgArrowLongLeft, CgArrowLongRight } from 'react-icons/cg';
 import { useInView } from 'react-intersection-observer';
 import { Carousel } from 'react-responsive-carousel';
 
+const SOLUTIONS = [
+  {
+    title: 'Data Analytics & \nAI/ML Solutions',
+    icon: analyticsIcon,
+    iconBgcolor: 'bg-oktransparentorange',
+    shortDetails:
+      'Embrace industry and function specific Data & Extend your capabilities. Become Data Driven.',
+    listTitle: 'Design & Development',
+    lists: [
+      'Business Analysis',
+      'Business Intelligence',
+      'Requirement Engineering',
+      'Functional Analysis',
+      'Data Governance',
+      'Data Science & Data Engineering',
+      'Artificial Intelligence',
+    ],
+  },
+  {
+    title: 'Design & \nDevelopment',
+    icon: securityIcon,
+    iconBgcolor: 'bg-oktransparentorange',
+    shortDetails:
+      "Tailored to your organization's need. Focused on user experience and business outcomes",
+    listTitle: 'Design & Development',
+    lists: [
+      'Software & Web Development',
+      'Mobile Development',
+      'UX/UI Design',
+      'Devops',
+    ],
+  },
+  {
+    title: 'Testing and Quality \nManagement',
+    icon: testingIcon,
+    iconBgcolor: 'bg-oktransparentgreen',
+    shortDetails:
+      'Improve Your efficiency, while being scalable and reliable. Support a rapid delivery, while increasing your coverage and quality.',
+    listTitle: 'Testing and Quality Management',
+    lists: [
+      'Functional Testing Non-Functional Testing Test Automation',
+      'Performance Testing Penetration Testing Test Management and',
+      'Solutions Quality Assurance & Quality Control',
+    ],
+  },
+  {
+    title: 'Business Applications & \nProcesses',
+    icon: businessIcon,
+    iconBgcolor: 'bg-oktransparentpurple',
+    shortDetails:
+      'Translate strategy into execution, Okoios creates durable solutions and measurables results.',
+    listTitle: 'Business Applications & Processes',
+    lists: [
+      'CRM & ERP',
+      'ECM/DMS & Portals',
+      'Architecture and infrastructure',
+      'Robotic Process Automation',
+      'Cognitive Solutions (chatbot & virtual assistant)',
+    ],
+  },
+  {
+    title: 'Project & IT Governance',
+    icon: governanceIcon,
+    iconBgcolor: 'bg-oktransparentred',
+    shortDetails:
+      ' Ensure operational excellence. Drive high quality and outcomes for your business.',
+    listTitle: 'Project & IT Governance',
+    lists: [
+      'Support and operations',
+      'PPM, PMO, Project Management',
+      'Scrum Master',
+    ],
+  },
+  {
+    title: 'Cloud',
+    icon: cloudIcon,
+    iconBgcolor: 'bg-oktransparentgreenblue',
+    shortDetails: 'Leverage the cloud to drive speed and innovation',
+    listTitle: 'Cloud',
+    lists: [
+      'Cloud Architecture & Solutions',
+      'Cloud Computing',
+      'Infrastructure as a Service',
+      'Platform as a Service',
+      'Software as a Service',
+    ],
+  },
+  {
+    title: 'IT Security',
+    icon: securityIcon,
+    iconBgcolor: 'bg-oktransparentyellow',
+    shortDetails:
+      'Protect your infrastructure and keep control of your security level, from end to end wherever your organization goes.',
+    listTitle: 'IT Security',
+    lists: [
+      'Cybersecurity',
+      'Risk Management',
+      'Digital Risk Monitoring',
+      'Network Security',
+      'Identity and access management',
+      'Incident Management',
+    ],
+  },
+  {
+    title: 'Blockchain',
+    icon: blockchainIcon,
+    iconBgcolor: 'bg-oktransparentblue',
+    shortDetails:
+      'Unlock value in your organisations value chain with leaders in distributed ledger technologies.',
+    listTitle: 'Blockchain',
+    lists: [
+      'Software adjustments for Blockchain Solutions',
+      'Tokenisation',
+      'Blockchain Testing',
+      'Big Data & Blockchain Analysis',
+      'Smart Contracts/programmable ledger Development And Implementation',
+      'Blockchain as a Service',
+      'Decentralized Applications (Dapps)',
+      'ecentralized Autonomous Organisations (Daos)',
+    ],
+  },
+];
+
 export default function Solutions() {
-  const [focusedCard, setFocusedCard] = useState<number>(null);
-  const [showModal, setShowModal] = useState<boolean>(false);
+  const [focusedSolutionIndex, setFocusedSolutionIndex] =
+    useState<number>(null);
 
   const { ref, inView } = useInView({
     threshold: 0.2,
     triggerOnce: true,
   });
 
-  const solutionData = [
-    {
-      id: 1,
-      title: 'Data Analytics & \nAI/ML Solutions',
-      icon: analyticsIcon,
-      iconBgcolor: 'bg-oktransparentorange',
-      shortDetails:
-        'Embrace industry and function specific Data & Extend your capabilities. Become Data Driven.',
-      listTitle: 'Design & Development',
-      lists: [
-        'Business Analysis',
-        'Business Intelligence',
-        'Requirement Engineering',
-        'Functional Analysis',
-        'Data Governance',
-        'Data Science & Data Engineering',
-        'Artificial Intelligence',
-      ],
-    },
-    {
-      id: 2,
-      title: 'Design & \nDevelopment',
-      icon: securityIcon,
-      iconBgcolor: 'bg-oktransparentorange',
-      shortDetails:
-        "Tailored to your organization's need. Focused on user experience and business outcomes",
-      listTitle: 'Design & Development',
-      lists: [
-        'Software & Web Development',
-        'Mobile Development',
-        'UX/UI Design',
-        'Devops',
-      ],
-    },
-    {
-      id: 3,
-      title: 'Testing and Quality \nManagement',
-      icon: testingIcon,
-      iconBgcolor: 'bg-oktransparentgreen',
-      shortDetails:
-        'Improve Your efficiency, while being scalable and reliable. Support a rapid delivery, while increasing your coverage and quality.',
-      listTitle: 'Testing and Quality Management',
-      lists: [
-        'Functional Testing Non-Functional Testing Test Automation',
-        'Performance Testing Penetration Testing Test Management and',
-        'Solutions Quality Assurance & Quality Control',
-      ],
-    },
-    {
-      id: 4,
-      title: 'Business Applications & \nProcesses',
-      icon: businessIcon,
-      iconBgcolor: 'bg-oktransparentpurple',
-      shortDetails:
-        'Translate strategy into execution, Okoios creates durable solutions and measurables results.',
-      listTitle: 'Business Applications & Processes',
-      lists: [
-        'CRM & ERP',
-        'ECM/DMS & Portals',
-        'Architecture and infrastructure',
-        'Robotic Process Automation',
-        'Cognitive Solutions (chatbot & virtual assistant)',
-      ],
-    },
-    {
-      id: 5,
-      title: 'Project & IT Governance',
-      icon: governanceIcon,
-      iconBgcolor: 'bg-oktransparentred',
-      shortDetails:
-        ' Ensure operational excellence. Drive high quality and outcomes for your business.',
-      listTitle: 'Project & IT Governance',
-      lists: [
-        'Support and operations',
-        'PPM, PMO, Project Management',
-        'Scrum Master',
-      ],
-    },
-    {
-      id: 6,
-      title: 'Cloud',
-      icon: cloudIcon,
-      iconBgcolor: 'bg-oktransparentgreenblue',
-      shortDetails: 'Leverage the cloud to drive speed and innovation',
-      listTitle: 'Cloud',
-      lists: [
-        'Cloud Architecture & Solutions',
-        'Cloud Computing',
-        'Infrastructure as a Service',
-        'Platform as a Service',
-        'Software as a Service',
-      ],
-    },
-    {
-      id: 7,
-      title: 'IT Security',
-      icon: securityIcon,
-      iconBgcolor: 'bg-oktransparentyellow',
-      shortDetails:
-        'Protect your infrastructure and keep control of your security level, from end to end wherever your organization goes.',
-      listTitle: 'IT Security',
-      lists: [
-        'Cybersecurity',
-        'Risk Management',
-        'Digital Risk Monitoring',
-        'Network Security',
-        'Identity and access management',
-        'Incident Management',
-      ],
-    },
-    {
-      id: 8,
-      title: 'Blockchain',
-      icon: blockchainIcon,
-      iconBgcolor: 'bg-oktransparentblue',
-      shortDetails:
-        'Unlock value in your organisations value chain with leaders in distributed ledger technologies.',
-      listTitle: 'Blockchain',
-      lists: [
-        'Software adjustments for Blockchain Solutions',
-        'Tokenisation',
-        'Blockchain Testing',
-        'Big Data & Blockchain Analysis',
-        'Smart Contracts/programmable ledger Development And Implementation',
-        'Blockchain as a Service',
-        'Decentralized Applications (Dapps)',
-        'ecentralized Autonomous Organisations (Daos)',
-      ],
-    },
-  ];
-
-  const filterData = (id) => {
-    return solutionData.find((item) => item.id === id);
-  };
-
-  const toggleModal = (id) => {
-    setShowModal(!showModal);
-    filterData(id);
-  };
+  const focusedSolution =
+    focusedSolutionIndex === null ? null : SOLUTIONS[focusedSolutionIndex];
 
   return (
     <>
@@ -186,8 +172,8 @@ export default function Solutions() {
             </p>
           </div>
           <div className="hidden md:grid gap-4 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2">
-            {solutionData?.map((solution) => (
-              <SolutionCard key={solution.id} {...solution} />
+            {SOLUTIONS?.map((solution, index) => (
+              <SolutionCard key={index} id={index} {...solution} />
             ))}
           </div>
           <Carousel
@@ -225,27 +211,24 @@ export default function Solutions() {
               )
             }
           >
-            {solutionData?.map((solution) => (
+            {SOLUTIONS.map((solution, index) => (
               <SolutionCard
-                key={solution.id}
+                id={index}
+                key={index}
                 {...solution}
-                onclick={() => toggleModal(solution.id)}
+                onclick={() => setFocusedSolutionIndex(index)}
               />
             ))}
           </Carousel>
         </Container>
       </section>
-      {showModal ? (
+      {focusedSolution == null || (
         <Modal
-          title="Hello World"
-          lists={[
-            'Create Scalable Elegant',
-            'Modals In JavaScript or React',
-            'So, here is what we are going to be building:',
-          ]}
-          setShowModal={setShowModal}
+          title={focusedSolution.title}
+          lists={focusedSolution.lists}
+          onHideModal={() => setFocusedSolutionIndex(null)}
         />
-      ) : null}
+      )}
     </>
   );
 }
