@@ -35,10 +35,7 @@ export default function BusinessManagersSection() {
     },
   ];
   return (
-    <section
-      ref={ref}
-      className={clsx('opacity-0', inView && 'animate-fadeIn')}
-    >
+    <div ref={ref} className={clsx('opacity-0', inView && 'animate-fadeIn')}>
       <Container>
         <h1 className="text-okwhite text-center font-bold text-3xl md:text-5xl mb-40">
           Our Business Managers
@@ -50,7 +47,10 @@ export default function BusinessManagersSection() {
         </div>
       </Container>
 
-      <div className="h-waves bg-waves bg-waves-size bg-okred w-full bg-center relative -top-64 z-0 -mb-64"></div>
-    </section>
+      <div className="h-[515px] -mt-64 bg-waves bg-waves-size bg-okred w-full bg-center relative z-0">
+        <span className="absolute w-1/6 left-0 top-0 h-full bg-gradient-to-r from-okred to bg-oktransparent"></span>
+        <span className="absolute w-1/6 right-0 top-0 h-full bg-gradient-to-l from-okred to bg-oktransparent"></span>
+      </div>
+    </div>
   );
 }

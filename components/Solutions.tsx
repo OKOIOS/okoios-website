@@ -169,16 +169,17 @@ export default function Solutions() {
   return (
     <>
       <section
+        id="solutions"
         ref={ref}
         className={clsx(
-          'opacity-0  pt-20 md:pt-32 mb-32 px-4',
+          'opacity-0 pt-20 lg:pt-40 pb-32 px-4',
           inView && 'animate-fadeIn'
         )}
       >
         <Container>
           <div className="md:text-left text-center">
             <h1 className="text-okred text-sm tracking-widest mb-3">
-              <a id="solutions">SOLUTIONS</a>
+              <a>SOLUTIONS</a>
             </h1>
             <p className="text-okwhite text-2xl md:text-4xl font-bold mb-10">
               End to End Solution Provider
@@ -193,10 +194,10 @@ export default function Solutions() {
             className="md:hidden block"
             showThumbs={false}
             showIndicators={false}
-            autoPlay={false}
+            autoPlay={true}
             centerSlidePercentage={80}
             infiniteLoop={true}
-            interval={3000}
+            interval={5000}
             centerMode={true}
             transitionTime={1500}
             stopOnHover={true}

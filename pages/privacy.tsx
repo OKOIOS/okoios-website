@@ -8,6 +8,7 @@ import IntroSection from '../components/IntroSection';
 import JoinUs from '../components/JoinUs';
 import Services from '../components/Services';
 import Solutions from '../components/Solutions';
+import Container from '../components/common/Container';
 import '@fontsource/montserrat/600.css';
 import '@fontsource/montserrat/700.css';
 import React from 'react';
@@ -16,21 +17,18 @@ export default function Privacy() {
   return (
     <>
       <Head />
-      <div
-        className="flex flex-col justify-between bg-okgray min-h-screen font-body font-light text-oklavishwhite relative w-full"
-        id="top"
-      >
-        <Header />
-        <main className="mb-auto m-auto w-1366">
-          <div className="w-1/2 m-auto">
-            <h1 className="text-center text-4xl font-bold text-okwhite mb-20">
-              Privacy Policy
-            </h1>
-            <section className="mb-10">
+
+      <Header />
+      <main className="px-4">
+        <Container>
+          <h1 className="text-center text-3xl md:text-4xl font-bold text-okwhite my-12">
+            Privacy Policy
+          </h1>
+          <div className="grid gap-10">
+            <div className="start-block">
               <h2 className="text-okwhite mb-3 font-semibold">
                 About this statement
               </h2>
-
               <p className="mb-3">
                 Personal Data means any information that relates to a natural
                 person, identified or identifiable, directly or indirectly, most
@@ -51,8 +49,8 @@ export default function Privacy() {
                 <li>Identification Data</li>
                 <li>Technical Data</li>
               </ul>
-            </section>
-            <section className="mb-10">
+            </div>
+            <div className="start-block">
               <h2 className="text-okwhite mb-3 font-semibold">
                 Usage of personal data
               </h2>
@@ -76,8 +74,8 @@ export default function Privacy() {
                 </li>
                 <li>Direct marketing</li>
               </ul>
-            </section>
-            <section className="mb-10">
+            </div>
+            <div className="start-block">
               <h2 className="text-okwhite mb-3 font-semibold">
                 Our commitment
               </h2>
@@ -110,8 +108,8 @@ export default function Privacy() {
                   Ensuring the Company’s network and information security.
                 </li>
               </ol>
-            </section>
-            <section className="mb-10">
+            </div>
+            <div className="start-block">
               <h2 className="text-okwhite mb-3 font-semibold">
                 Retaining of personal data
               </h2>
@@ -122,8 +120,8 @@ export default function Privacy() {
                 in this Privacy Policy, or until you request that the
                 information be removed.
               </p>
-            </section>
-            <section className="mb-10">
+            </div>
+            <div className="start-block">
               <h2 className="text-okwhite mb-3 font-semibold">Your rights</h2>
 
               <p className="mb-3">
@@ -143,8 +141,8 @@ export default function Privacy() {
                 in accordance with relevant legislation and our privacy and
                 security standards.
               </p>
-            </section>
-            <section className="mb-10">
+            </div>
+            <div className="start-block">
               <h2 className="text-okwhite mb-3 font-semibold">
                 Changes of Policy
               </h2>
@@ -157,12 +155,12 @@ export default function Privacy() {
                 Okoios may update this Policy periodically. In such case, it
                 will inform about the updated Policy on the website
               </p>
-            </section>
+            </div>
           </div>
-        </main>
-        <Footer />
-        <CookieNotice />
-      </div>
+        </Container>
+      </main>
+      <Footer />
+      <CookieNotice />
     </>
   );
 }

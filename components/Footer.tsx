@@ -12,34 +12,35 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="text-okwhite">
-      <Container>
-        <div className="flex md:flex-row flex-col justify-between mb-16 pt-20 px-4">
-          <Link href="/#top">
-            <a className="block sm:mb-0 mb-12 sm:mx-0 mx-auto sm:text-left text-center w-28 md:w-52">
-              <Image
-                src={redLogo}
-                alt={`${COMPANY_LONG_NAME} logo`}
-                layout="responsive"
-              />
-            </a>
-          </Link>
-          <div className="">
-            <h6 className="font-bold mb-3 text-sm md:text-right text-center">
-              Follow Us
-            </h6>
-            <ul className="flex sm:justify-start justify-center space-x-4">
-              <li>
-                <Link href="/">
-                  <a
-                    target="_blank"
-                    className="flex items-center justify-center w-7 h-7 text-sm rounded-full bg-oklightergray p-1 transition-all hover:scale-125 hover:bg-oktransparentgreen"
-                  >
-                    <FaLinkedinIn />
-                  </a>
-                </Link>
-              </li>
-              {/* <li>
+    <>
+      <footer className="text-okwhite">
+        <Container>
+          <div className="flex sm:flex-row flex-col justify-between mb-16 pt-20 px-4">
+            <Link href="/#top">
+              <a className="block sm:mb-0 mb-12 sm:mx-0 mx-auto sm:text-left text-center w-28 md:w-52">
+                <Image
+                  src={redLogo}
+                  alt={`${COMPANY_LONG_NAME} logo`}
+                  layout="responsive"
+                />
+              </a>
+            </Link>
+            <div className="">
+              <h6 className="font-bold mb-3 text-sm md:text-right text-center">
+                Follow Us
+              </h6>
+              <ul className="flex sm:justify-start justify-center space-x-4">
+                <li>
+                  <Link href="/">
+                    <a
+                      target="_blank"
+                      className="flex items-center justify-center w-7 h-7 text-sm rounded-full bg-oklightergray p-1 transition-all hover:scale-125 hover:bg-oktransparentgreen"
+                    >
+                      <FaLinkedinIn />
+                    </a>
+                  </Link>
+                </li>
+                {/* <li>
                 <Link href="/">
                   <a
                     target="_blank"
@@ -59,15 +60,25 @@ export default function Footer() {
                   </a>
                 </Link>
               </li> */}
-            </ul>
+              </ul>
+            </div>
           </div>
-        </div>
-      </Container>
+        </Container>
+      </footer>
       <div className="bg-oklightgray p-4">
-        <p className="text-sm text-center">
-          All Rights Reservd 2021 Okoios Consluting
-        </p>
+        <Container>
+          <div className="sm:flex flex-wrap items-center text-center">
+            <Link href="/privacy">
+              <a className="self-start sm:mb-0 mb-2 inline-block">
+                Privacy Policy
+              </a>
+            </Link>
+            <p className="text-sm text-center self-center mx-auto">
+              All Rights Reservd 2021 Okoios Consluting
+            </p>
+          </div>
+        </Container>
       </div>
-    </footer>
+    </>
   );
 }

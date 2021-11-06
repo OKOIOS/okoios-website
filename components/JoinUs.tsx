@@ -42,7 +42,7 @@ export default function Solutions() {
             Would you like to share your expertise and talents with the team?
           </h2>
           <Link href="/careers">
-            <a className="inline-flex items-center justify-center relative overflow-hidden mx-auto bg-okblack px-14 py-4">
+            <a className="inline-flex items-center justify-center relative overflow-hidden mx-auto bg-okblack hover:bg-okred hover:text-okwhite transition-all active:bg-okred px-14 py-4">
               Join Now
               <span className="absolute transform rotate-45 w-6 h-6 bg-okred -bottom-3 -right-3"></span>
             </a>

@@ -8,9 +8,6 @@ html {
 body {
   font-family: 'Montserrat', sans-serif;
 }
-
-.solution-card {
-}
 .solution-card .back {
   opacity: 0;
   left: -100%;
@@ -27,11 +24,11 @@ body {
 .carousel .slide {
   padding: 0 0.6rem;
 }
+
 @layer base {
   html {
     scroll-behavior: smooth;
   }
-
   .job-description ul {
     @apply ml-10 list-disc;
   }

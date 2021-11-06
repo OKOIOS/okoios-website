@@ -24,7 +24,7 @@ export default function SolutionCard({
     <>
       <div
         onClick={onclick}
-        className="shadow rounded-xl overflow-auto md:overflow-hidden cursor-pointer relative solution-card bg-oklightgray mb-2 w-full text-left h-[344px] transform sm:translate-x-0 translate-x-[calc(-15%+0vw)]"
+        className="shadow rounded-xl overflow-auto md:overflow-hidden cursor-pointer relative solution-card bg-oklightgray mb-2 w-full text-left h-[330px] md:h-[344px] transform sm:translate-x-0 translate-x-[calc(-15%+0vw)]"
       >
         <div className="front p-6">
           <div
