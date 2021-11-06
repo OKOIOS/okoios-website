@@ -34,7 +34,7 @@ export default function Header() {
         'bg-oktransparent': !navBg && history.pathname !== '/',
       })}
     >
-      <header className="p-4">
+      <header className="p-4 md:py-6">
         <Container>
           <div className="flex justify-between items-center">
             {/* Logo  */}
