@@ -48,6 +48,7 @@ export default function Head() {
           />
         </>
       )}
+      <meta name="robots" content="noindex,nofollow" />
     </NextHead>
   );
 }
