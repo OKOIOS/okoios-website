@@ -39,7 +39,7 @@ export default function Header() {
           <div className="flex justify-between items-center">
             {/* Logo  */}
             <div className="h-10 lg:h-14 w-40 lg:w-56">
-              <Link href="/">
+              <Link href="/index2">
                 <a className="block w-full">
                   <Image
                     src={logo}
@@ -111,7 +111,7 @@ export default function Header() {
                   </Link>
                 </li>
                 <li className="relative z-20">
-                  <Link href="/#services">
+                  <Link href="/index2#services">
                     <a
                       className="font-semibold md:font-light md:text-base text-3xl"
                       onClick={toggleMenu}
@@ -121,7 +121,7 @@ export default function Header() {
                   </Link>
                 </li>
                 <li className="relative z-20">
-                  <Link href="/#solutions">
+                  <Link href="/index2#solutions">
                     <a
                       className="font-semibold md:font-light md:text-base text-3xl"
                       onClick={toggleMenu}
@@ -141,7 +141,7 @@ export default function Header() {
                   </Link>
                 </li>
                 <li className="relative z-20 overflow-hidden">
-                  <Link href="/#contact">
+                  <Link href="/index2#contact">
                     <a
                       onClick={toggleMenu}
                       className="block font-semibold md:font-light md:text-base text-3xl md:px-8 xl:px-12 md:py-3 xl:py-5 md:bg-okred"

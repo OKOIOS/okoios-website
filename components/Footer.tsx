@@ -31,7 +31,7 @@ export default function Footer() {
               </h6>
               <ul className="flex sm:justify-start justify-center space-x-4">
                 <li>
-                  <Link href="/">
+                  <Link href="/index2">
                     <a
                       target="_blank"
                       className="flex items-center justify-center w-7 h-7 text-sm rounded-full bg-oklightergray p-1 transition-all hover:scale-125 hover:bg-oktransparentgreen"
@@ -41,7 +41,7 @@ export default function Footer() {
                   </Link>
                 </li>
                 {/* <li>
-                <Link href="/">
+                <Link href="/index2">
                   <a
                     target="_blank"
                     className="flex items-center justify-center w-7 h-7 text-sm rounded-full bg-oklightergray p-1 transition-all hover:scale-125 hover:bg-oktransparentgreen"
@@ -51,7 +51,7 @@ export default function Footer() {
                 </Link>
               </li>{' '}
               <li>
-                <Link href="/">
+                <Link href="/index2">
                   <a
                     target="_blank"
                     className="flex items-center justify-center w-7 h-7 text-sm rounded-full bg-oklightergray p-1 transition-all hover:scale-125 hover:bg-oktransparentgreen"
