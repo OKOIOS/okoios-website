@@ -34,7 +34,7 @@ export default function ContactSection(): React.ReactElement {
               </h2>
               <p className="text-oklavishwhite mb-16 max-w-md">
                 We deliver added value, proficiency & continuous support through
-                our IT experts
+                our IT Experts
               </p>
             </div>
             <address className="not-italic">
@@ -82,7 +82,7 @@ export default function ContactSection(): React.ReactElement {
               </h2>
               <p className="text-oklavishwhite mb-16 max-w-md">
                 We deliver added value, proficiency & continuous support through
-                our IT experts
+                our IT Experts
               </p>
             </div>
             <ContactForm />

@@ -46,10 +46,10 @@ export default function IntroSection() {
           <p className="relative leading-8 lg:text-left text-center md:text-base text-sm lg:max-w-[616px] w-full">
             <span className="lg:block hidden absolute -left-8 w-1.5 h-full bg-okred"></span>
             In a fast-paced digital environment, continuous development and
-            agile paths are at the heart of organisations activities. Navigating
-            in this environment, requires an agile and reliable partner for all
-            conditions. Harness the power of IT through of our team experts. We
-            are designed to be different
+            agile paths are at the heart of successful organisation. Navigating
+            in such territories requires an innovative and reliable partner
+            equipped for all conditions. Harness the power of IT through our
+            team of dedicated experts. We are designed to be different
           </p>
         </div>
       </div>

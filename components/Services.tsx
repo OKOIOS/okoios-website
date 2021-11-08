@@ -35,23 +35,29 @@ export default function Solutions() {
       <Container>
         <div className="text-center max-w-2xl mx-auto">
           <h2 className="font-semibold text-2xl md:text-3xl lg:text-5xl text-okwhite mb-6">
-            Consulting Service Levels
+            Depth of Services
           </h2>
           <p className="pb-10 md:pb-20">
-            We offer 4 levels of consulting services adapted to clients’
-            specific needs and requests.
+            We offer 4 different approaches of consulting services adapted to
+            clients’ specific needs. From individual IT expert support to
+            tailor-made projects, OKOIOS embraces an agile and highly
+            customizable approach to your evolving business goals.
           </p>
         </div>
         <div className="relative lg:block grid gap-6 sm:grid-cols-2">
           <div className="bg-oklightgray rounded-xl z-10 shadow-2xl lg:max-w-xs xl:max-w-sm w-full md:text-left text-center md:pl-8 pl-2 pr-2 py-6 relative lg:absolute left-0 top-0">
             <span className="absolute w-3 h-3 rounded-full mx-auto left-0 right-0 -top-1.5 bg-okred lg:hidden block"></span>
-            <h4 className="text-okwhite font-bold mb-1">UT Expert Support</h4>
+            <h4 className="text-okwhite font-bold mb-1">IT Expert Support</h4>
             <p className="o">Expert Support on a time & material basis</p>
           </div>
           <div className="bg-oklightgray rounded-xl z-10 shadow-2xl lg:max-w-xs xl:max-w-sm w-full md:text-left text-center md:pl-8 pl-2 pr-2 py-6 relative lg:absolute left-0 xl:bottom-0 bottom-0 lg:-bottom-14">
             <span className="absolute w-3 h-3 rounded-full mx-auto left-0 right-0 -top-1.5 bg-okred lg:hidden block"></span>
             <h4 className="text-okwhite font-bold mb-1">Managed Service</h4>
-            <p className="o">Multi-skilled team support on various projects</p>
+            <p className="o">
+              A service level agreement that is tailored to your requirements.
+              Transfer responsibility for any areas of IT management to OKOIOS
+              and focus on your core business.
+            </p>
           </div>
 
           <div className="bg-oklightgray rounded-xl z-10 shadow-2xl lg:max-w-xs xl:max-w-sm w-full md:text-left text-center md:pl-8 pl-2 pr-2 py-6 relative lg:absolute right-0 top-0">
@@ -65,7 +71,7 @@ export default function Solutions() {
             <span className="absolute w-3 h-3 rounded-full left-0 right-0 mx-auto -top-1.5 bg-okred lg:hidden block"></span>
             <h4 className="text-okwhite font-bold mb-1">Fixed-price Project</h4>
             <p className="o">
-              <span className="sm:block inline-block"> A Projecy? </span>
+              <span className="sm:block inline-block"> A Project? </span>
               <Link href="/index2#contact">
                 <a className="inline-block mx-1 text-okred">Lets talk</a>
               </Link>

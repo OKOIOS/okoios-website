@@ -17,9 +17,9 @@ export default function BusinessManagersSection() {
     {
       id: 1,
       image: lucasHess,
-      name: 'Lucas HESS',
+      name: 'Lucas Hess',
       details:
-        "I think the beauty of a seamless link between technology and people can be appreciated as the foundation leading to success in today's business environment. Our aim at Okoios is to push the boundaries between ideas and cutting edge solutions for our clients",
+        "“I think the beauty of a seamless link between technology and people can be appreciated as the foundation leading to success in today's business environment. Our aim at Okoios is to push the boundaries between ideas and cutting edge solutions for our clients.”",
       linkedin:
         'https://www.linkedin.com/in/lucas-hess-6037a8150/?originalSubdomain=ch',
       facebook: '/facebook.com',
@@ -27,9 +27,9 @@ export default function BusinessManagersSection() {
     {
       id: 2,
       image: jonathanAktepe,
-      name: 'Jonathan AKTEPTE',
+      name: 'Jonathan Aktepe',
       details:
-        'Each and every project is a unique opportunity to accelerate your company in the digital future. I think the most important aspect when implementing new digital solutions is not the technology itself but rather the people behind it. We push ourselves to find the best possible path of leveraging technology for your organisation.',
+        '“Each and every project is a unique opportunity to accelerate your company in the digital future. I think the most important aspect when implementing new digital solutions is not the technology itself but rather the people behind it. We push ourselves to find the best possible path of leveraging technology for your organisation.”',
       linkedin: 'https://www.linkedin.com',
       facebook: '/facebook.com',
     },

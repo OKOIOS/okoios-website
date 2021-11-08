@@ -47,7 +47,7 @@ export default function About() {
                   We plan
                 </h6>
                 <p className="text-base sm:text-xl">
-                  Analyse, Design, Implement, Test, Integrate & Maintain
+                  Analyse, Design, Implement, Test, Integrate & Maintain.
                 </p>
                 <span className="lg:hidden block absolute bottom-0 w-0.5 h-8 bg-okred left-0 right-0 mx-auto"></span>
               </div>
@@ -60,8 +60,8 @@ export default function About() {
                   We enable
                 </h6>
                 <p className="text-base sm:text-xl">
-                  The delivery of continuous innovation and improvements,
-                  assisting you to reach your objectives.
+                  the delivery of continuous innovation and improvements,
+                  assisting you to reach your objectives
                 </p>
               </div>
               <div className="xl:col-span-2 lg:text-left text-center col-span-1 relative lg:top-1/4 order-3">

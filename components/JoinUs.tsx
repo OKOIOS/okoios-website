@@ -39,11 +39,11 @@ export default function Solutions() {
             <Image src={arrowWhite} height={44} width={4} alt="JOIN US" />
           </div>
           <h2 className="text-xl md:text-4xl font-bold text-okwhite mb-10">
-            Would you like to share your expertise and talents with the team?
+            Would you like to share your expertise and talents with our team?
           </h2>
           <Link href="/careers">
             <a className="inline-flex items-center justify-center relative overflow-hidden mx-auto bg-okblack hover:bg-okred hover:text-okwhite transition-all active:bg-okred px-14 py-4">
-              Join Now
+              Contact Us
               <span className="absolute transform rotate-45 w-6 h-6 bg-okred -bottom-3 -right-3"></span>
             </a>
           </Link>

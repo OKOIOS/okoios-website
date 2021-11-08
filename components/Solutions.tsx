@@ -46,7 +46,7 @@ const SOLUTIONS = [
       'Software & Web Development',
       'Mobile Development',
       'UX/UI Design',
-      'Devops',
+      'DevOps',
     ],
   },
   {
@@ -57,9 +57,13 @@ const SOLUTIONS = [
       'Improve Your efficiency, while being scalable and reliable. Support a rapid delivery, while increasing your coverage and quality.',
     listTitle: 'Testing and Quality Management',
     lists: [
-      'Functional Testing Non-Functional Testing Test Automation',
-      'Performance Testing Penetration Testing Test Management and',
-      'Solutions Quality Assurance & Quality Control',
+      'Functional Testing',
+      'Non-Functional Testing',
+      'Test Automation',
+      'Performance Testing',
+      'Penetration Testing',
+      'Test Management and Solutions',
+      'Quality Assurance & Quality Control',
     ],
   },
   {
@@ -135,7 +139,7 @@ const SOLUTIONS = [
       'Smart Contracts/programmable ledger Development And Implementation',
       'Blockchain as a Service',
       'Decentralized Applications (Dapps)',
-      'ecentralized Autonomous Organisations (Daos)',
+      'Decentralized Autonomous Organisations (Daos)',
     ],
   },
 ];
