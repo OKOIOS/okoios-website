@@ -8,13 +8,7 @@ import Link from 'next/link';
 import { FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
 import { useInView } from 'react-intersection-observer';
 
-export default function ProfileCard({
-  image,
-  name,
-  details,
-  linkedin,
-  facebook,
-}) {
+export default function ProfileCard({ image, name, details, linkedin }) {
   return (
     <>
       <div className="bg-oklightgray shadow-lg rounded-xl p-6 relative md:text-left text-center lg:max-w-[565px] xl:h-[500px] w-full">
