@@ -17,13 +17,13 @@ export default function ProfileCard({
 }) {
   return (
     <>
-      <div className="bg-oklightgray shadow-lg rounded-xl p-6 relative md:text-left text-center md:max-w-[565px] lg:h-[500px] w-full">
+      <div className="bg-oklightgray shadow-lg rounded-xl p-6 relative md:text-left text-center lg:max-w-[565px] xl:h-[500px] w-full">
         <div className="absolute -top-20 xl:-top-10 left-0 md:left-10 right-0 md:right-auto">
           <Image src={image} alt={name} height={160} width={160} />
         </div>
         <div className="pt-28">
           <h5 className="text-okwhite text-2xl font-bold mb-4">{name}</h5>
-          <p className="mb-16 leading-relaxed text-xl">“{details}”</p>
+          <p className="mb-16 leading-relaxed text-xl">{details}</p>
           <ul className="flex space-x-6 items-center md:justify-start justify-center absolute md:left-6 left-0 md:right-auto right-0 md:mx-0 mx-auto bottom-10 md:bottom-6">
             <li>
               <Link href={linkedin}>
