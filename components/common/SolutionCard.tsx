@@ -38,10 +38,10 @@ export default function SolutionCard({
           <p className="text-sm leading-relaxed">{shortDetails}</p>
         </div>
         <div className="md:block hidden absolute inset-0 transition-all bg-okred text-okwhite p-8 w-full h-full overflow-auto back">
-          <h6 className="text-lg font-bold mb-4">{listTitle}</h6>
+          <h6 className="text-lg font-bold mb-6">{listTitle}</h6>
           <ul>
             {lists?.map((list, idx) => (
-              <li key={idx} className="text-sm mb-1 relative flex">
+              <li key={idx} className="text-sm mb-2 relative flex">
                 <span className="w-1.5 h-1.5 rounded-full bg-okwhite mt-1.5 block absolute left-0 top-0"></span>
                 <span className="pl-4">{list}</span>
               </li>

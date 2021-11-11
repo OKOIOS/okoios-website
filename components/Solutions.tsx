@@ -24,7 +24,7 @@ const SOLUTIONS = [
     iconBgcolor: 'bg-oktransparentorange',
     shortDetails:
       'Embrace industry and function specific Data & Extend your capabilities. Become Data Driven.',
-    listTitle: 'Design & Development',
+    listTitle: 'Data Analytics & \nAI/ML Solutions',
     lists: [
       'Business Analysis',
       'Business Intelligence',

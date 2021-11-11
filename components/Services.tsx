@@ -73,8 +73,8 @@ export default function Solutions() {
             <p className="o">
               <span className="sm:block inline-block"> A Project? </span>
               <Link href="/index2#contact">
-                <a className="inline-block mx-1 text-okred">
-                  <q>Let's</q> talk
+                <a className="inline-block mr-1 text-okred font-semibold">
+                  Let's talk
                 </a>
               </Link>
               about it

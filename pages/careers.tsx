@@ -26,7 +26,7 @@ export default function Home({ jobs }) {
               <h1 className="text-okwhite font-semibold text-3xl xl:text-4xl mb-10">
                 Current openings
               </h1>
-              <p className="mb-32 text-xl">
+              <p className="mb-32 text-lg">
                 Please review our open positions and apply to the positions that
                 match your qualifications.
               </p>

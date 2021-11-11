@@ -17,7 +17,7 @@ export default function ProfileCard({ image, name, details, linkedin }) {
         </div>
         <div className="pt-28">
           <h5 className="text-okwhite text-2xl font-bold mb-4">{name}</h5>
-          <p className="mb-16 leading-relaxed text-xl">{details}</p>
+          <p className="mb-16 leading-relaxed text-lg">{details}</p>
           <ul className="flex space-x-6 items-center md:justify-start justify-center absolute md:left-6 left-0 md:right-auto right-0 md:mx-0 mx-auto bottom-10 md:bottom-6">
             <li>
               <Link href={linkedin}>
