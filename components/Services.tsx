@@ -26,7 +26,7 @@ export default function Solutions() {
       )}
     >
       <div
-        className="absolute -left-1/4 -top-40 rounded-full w-full max-w-4xl h-[900px] xl:block hidden"
+        className="absolute z-[-1] -left-1/4 -top-40 rounded-full w-full max-w-4xl h-[900px] xl:block hidden"
         style={{
           background:
             'radial-gradient(50% 50% at 50% 50%, #000000 0%, rgba(0, 0, 0, 0) 100%)',
@@ -55,8 +55,8 @@ export default function Solutions() {
             <h4 className="text-okwhite font-bold mb-1">Managed Service</h4>
             <p className="o">
               A service level agreement that is tailored to your requirements.
-              Transfer responsibility for any areas of IT management to OKOIOS
-              and focus on your core business.
+              {/* Transfer responsibility for any areas of IT management to OKOIOS
+              and focus on your core business. */}
             </p>
           </div>
 
@@ -73,7 +73,9 @@ export default function Solutions() {
             <p className="o">
               <span className="sm:block inline-block"> A Project? </span>
               <Link href="/index2#contact">
-                <a className="inline-block mx-1 text-okred">Lets talk</a>
+                <a className="inline-block mx-1 text-okred">
+                  <q>Let's</q> talk
+                </a>
               </Link>
               about it
             </p>

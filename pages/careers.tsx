@@ -23,10 +23,10 @@ export default function Home({ jobs }) {
         <main className="text-center px-4 py-6 md:mt-0 mt-20 sm:py-16 lg:py-32 relative z-10">
           <Container>
             <div className="max-w-3xl mx-auto">
-              <h1 className="text-okwhite font-semibold text-3xl xl:text-5xl mb-10">
+              <h1 className="text-okwhite font-semibold text-3xl xl:text-4xl mb-10">
                 Current openings
               </h1>
-              <p className="mb-32 text-xl lg:text-2xl">
+              <p className="mb-32 text-xl">
                 Please review our open positions and apply to the positions that
                 match your qualifications.
               </p>

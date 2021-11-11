@@ -34,7 +34,7 @@ export default function Header() {
         'bg-oktransparent': !navBg && history.pathname !== '/',
       })}
     >
-      <header className="p-4 md:py-6">
+      <header className="p-4">
         <Container>
           <div className="flex justify-between items-center">
             {/* Logo  */}
@@ -76,7 +76,7 @@ export default function Header() {
               </button>
 
               <ul
-                className={`md:items-center z-40 items-start md:pl-0 pl-10 flex md:flex-row flex-col md:justify-start justify-center text-okwhite space-y-8 md:space-y-0 md:space-x-6 lg:space-x-10 xl:space-x-14 md:relative absolute w-full md:h-auto bg-okred md:bg-oktransparent top-0 h-screen transition-all ${
+                className={`md:items-center z-40 md:pt-0 pt-28 items-start md:pl-0 pl-14 flex md:flex-row flex-col md:justify-start text-okwhite space-y-8 md:space-y-0 md:space-x-6 lg:space-x-10 xl:space-x-14 md:relative absolute w-full md:h-auto bg-okred md:bg-oktransparent top-0 h-screen transition-all ${
                   toggle ? 'left-[calc(-50rem+0vw)] md:left-0' : 'left-0'
                 }`}
               >
@@ -144,7 +144,7 @@ export default function Header() {
                   <Link href="/index2#contact">
                     <a
                       onClick={toggleMenu}
-                      className="block font-semibold md:font-light md:text-base text-3xl md:px-8 xl:px-12 md:py-3 xl:py-5 md:bg-okred"
+                      className="block font-semibold md:font-light md:text-base text-3xl md:px-8 xl:px-12 md:py-3 xl:py-4 md:bg-okred"
                     >
                       <span>Contact Us</span>
                       <span className="md:block hidden absolute transform rotate-45 w-6 h-6  bg-okgray -bottom-3 -right-3"></span>
