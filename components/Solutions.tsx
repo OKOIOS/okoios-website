@@ -23,7 +23,7 @@ const SOLUTIONS = [
     icon: analyticsIcon,
     iconBgcolor: 'bg-oktransparentorange',
     shortDetails:
-      'Embrace industry and function specific Data & Extend your capabilities. Become Data Driven.',
+      'Become Data Driven. Embrace industry and function specific Data & Extend your capabilities',
     listTitle: 'Data Analytics & \nAI/ML Solutions',
     lists: [
       'Business Analysis',
@@ -40,7 +40,7 @@ const SOLUTIONS = [
     icon: securityIcon,
     iconBgcolor: 'bg-oktransparentorange',
     shortDetails:
-      "Tailored to your organization's need. Focused on user experience and business outcomes",
+      'Tailored to your organisation’s needs. Focused on user experience and business outcomes',
     listTitle: 'Design & Development',
     lists: [
       'Software & Web Development',
@@ -54,7 +54,7 @@ const SOLUTIONS = [
     icon: testingIcon,
     iconBgcolor: 'bg-oktransparentgreen',
     shortDetails:
-      'Improve Your efficiency, while being scalable and reliable. Support a rapid delivery, while increasing your coverage and quality.',
+      'Improve Your efficiency, while remaining scalable and reliable. A rapid delivery, that increases your quality and coverage.',
     listTitle: 'Testing and Quality Management',
     lists: [
       'Functional Testing',
@@ -71,7 +71,7 @@ const SOLUTIONS = [
     icon: businessIcon,
     iconBgcolor: 'bg-oktransparentpurple',
     shortDetails:
-      'Translate strategy into execution, Okoios creates durable solutions and measurables results.',
+      'From strategy to execution, Okoios creates durable solutions and measurable results.',
     listTitle: 'Business Applications & Processes',
     lists: [
       'CRM & ERP',
@@ -86,7 +86,7 @@ const SOLUTIONS = [
     icon: governanceIcon,
     iconBgcolor: 'bg-oktransparentred',
     shortDetails:
-      ' Ensure operational excellence. Drive high quality and outcomes for your business.',
+      'Ensure operational excellence. Drive high quality and outcomes for your business',
     listTitle: 'Project & IT Governance',
     lists: [
       'Support and operations',
@@ -98,7 +98,7 @@ const SOLUTIONS = [
     title: 'Cloud',
     icon: cloudIcon,
     iconBgcolor: 'bg-oktransparentgreenblue',
-    shortDetails: 'Leverage the cloud to drive speed and innovation',
+    shortDetails: 'Leverage on cloud to drive speed and innovation',
     listTitle: 'Cloud',
     lists: [
       'Cloud Architecture & Solutions',
@@ -113,7 +113,7 @@ const SOLUTIONS = [
     icon: securityIcon,
     iconBgcolor: 'bg-oktransparentyellow',
     shortDetails:
-      'Protect your infrastructure and keep control of your security level, from end to end wherever your organization goes.',
+      'Protect your infrastructures and keep control of your security level, wherever your organization goes',
     listTitle: 'IT Security',
     lists: [
       'Cybersecurity',
@@ -129,7 +129,7 @@ const SOLUTIONS = [
     icon: blockchainIcon,
     iconBgcolor: 'bg-oktransparentblue',
     shortDetails:
-      'Unlock value in your organisations value chain with leaders in distributed ledger technologies.',
+      'Unlock value in your organisations using distributed ledger technologies',
     listTitle: 'Blockchain',
     lists: [
       'Software adjustments for Blockchain Solutions',
