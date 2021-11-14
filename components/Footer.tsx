@@ -25,12 +25,12 @@ export default function Footer() {
                 />
               </a>
             </Link>
-            <div className="">
+            {/* <div>
               <h6 className="font-bold mb-3 text-sm md:text-right text-center">
                 Follow Us
               </h6>
               <ul className="flex sm:justify-start justify-center space-x-4">
-                <li>
+                {/* <li>
                   <Link href="/">
                     <a
                       target="_blank"
@@ -59,9 +59,9 @@ export default function Footer() {
                     <FaInstagram />
                   </a>
                 </Link>
-              </li> */}
+              </li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </Container>
       </footer>
