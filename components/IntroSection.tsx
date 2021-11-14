@@ -43,7 +43,7 @@ export default function IntroSection() {
           <div className="lg:block hidden bg-gradient-to-r from-okgray h-60 w-72 absolute left-0 bottom-0"></div>
         </div>
         <div className="relative z-20 lg:rounded-xl p-4 md:p-8 shadow-lg bg-oklightgray md:mt-0 -mt-8">
-          <p className="relative leading-8 lg:text-left text-center md:text-base text-sm lg:max-w-[616px] w-full">
+          <p className="relative leading-8 lg:text-left text-center md:text-base text-sm lg:max-w-[650px] w-full">
             <span className="lg:block hidden absolute -left-8 w-1.5 h-full bg-okred"></span>
             In a fast-paced digital environment, continuous development and
             agile paths are at the heart of successful organisation. Navigating

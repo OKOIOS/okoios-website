@@ -35,11 +35,11 @@ export default function Modal({ title, lists, onHideModal }) {
               />
             </svg>
           </button>
-          <h6 className="text-lg font-bold mb-2">{title}</h6>
+          <h6 className="text-lg font-bold mb-4">{title}</h6>
           <ul>
             {lists?.map((list, idx) => (
               <li key={idx} className="text-sm mb-1 relative flex">
-                <span className="w-2 h-px bg-okwhite mt-2.5 block absolute left-0 top-0"></span>
+                <span className="w-1.5 h-1.5 rounded-full bg-okwhite mt-1.5 block absolute left-0 top-0"></span>
                 <span className="pl-4">{list}</span>
               </li>
             ))}

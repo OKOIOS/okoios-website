@@ -41,12 +41,14 @@ export default function Solutions() {
           <h2 className="text-xl md:text-4xl font-bold text-okwhite mb-10">
             Would you like to share your expertise and talents with our team?
           </h2>
-          <Link href="/careers">
-            <a className="inline-flex items-center justify-center relative overflow-hidden mx-auto bg-okblack hover:bg-okred hover:text-okwhite transition-all active:bg-okred px-14 py-4">
-              Contact Us
-              <span className="absolute transform rotate-45 w-6 h-6 bg-okred -bottom-3 -right-3"></span>
-            </a>
-          </Link>
+          <div className="relative inline-block overflow-hidden">
+            <Link href="/careers">
+              <a className="inline-flex items-center justify-center mx-auto bg-okblack hover:bg-okred border hover:border-okblack border-oktransparent hover:text-okwhite transition-all active:bg-okred active:border-okblack px-14 py-4">
+                Join Now
+              </a>
+            </Link>
+            <span className="absolute transform rotate-45 border border-okblack w-6 h-6 bg-okred -bottom-3 -right-3"></span>
+          </div>
         </div>
       </Container>
 

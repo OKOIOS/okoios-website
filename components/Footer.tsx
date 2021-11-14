@@ -67,14 +67,15 @@ export default function Footer() {
       </footer>
       <div className="bg-oklightgray p-4">
         <Container>
-          <div className="sm:flex flex-wrap items-center text-center">
+          <div className="relative text-center">
             <Link href="/privacy">
-              <a className="self-start sm:mb-0 mb-2 inline-block">
+              <a className="relative sm:absolute left-0 top-0 sm:mb-0 mb-2 inline-block">
                 Privacy Policy
               </a>
             </Link>
             <p className="text-sm text-center self-center mx-auto">
-              All Rights Reservd 2021 Okoios Consluting
+              All Rights Reserved 2021 <span className="uppercase">Okoios</span>{' '}
+              Consulting
             </p>
           </div>
         </Container>
