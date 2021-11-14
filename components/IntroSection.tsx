@@ -28,7 +28,7 @@ export default function IntroSection() {
                 <span className="w-4 h-4 block absolute -bottom-2 -right-2 border-l bg-okgray border-okred transform rotate-45"></span>
               </a>
             </Link>
-            <Link href="/index2#contact">
+            <Link href="/#contact">
               <a className="bg-oktransparent hover:bg-okred transition-all mt-4 border border-okred px-8 md:px-12 py-3 md:py-5 md:text-base text-xs relative">
                 Contact Us
                 <span className="w-4 h-4 block absolute -bottom-2 -right-2 border-l bg-okgray border-okred transform rotate-45"></span>

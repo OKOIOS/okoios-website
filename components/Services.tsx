@@ -72,7 +72,7 @@ export default function Solutions() {
             <h4 className="text-okwhite font-bold mb-1">Fixed-price Project</h4>
             <p className="o">
               <span className="sm:block inline-block"> A Project? </span>
-              <Link href="/index2#contact">
+              <Link href="/#contact">
                 <a className="inline-block mr-1 text-okred font-semibold">
                   Let's talk
                 </a>
