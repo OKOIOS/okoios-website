@@ -53,12 +53,12 @@ export default function ContactSection(): React.ReactElement {
                   </Link>
                 </li>
                 <li>
-                  <Link href="tel:+41792823137">
+                  <Link href="tel:+41227357401">
                     <a className="flex items-center space-x-4">
                       <div className="flex items-center justify-center bg-okred rounded p-1 w-12 h-12 text-okwhite">
                         <FaPhoneAlt className="text-2xl" />
                       </div>
-                      <span>+41 79 282 31 37</span>
+                      <span>+41(0)22 735 74 01</span>
                     </a>
                   </Link>
                 </li>
