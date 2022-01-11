@@ -2,7 +2,7 @@ import { COMPANY_LONG_NAME, COMPANY_TAGLINE } from '../utils/constants';
 import NextHead from 'next/head';
 import { useCookies } from 'react-cookie';
 
-export default function Head() {
+export default function Head(props) {
   const [cookies] = useCookies(['cookies-allowed']);
   const isCookiesAllowed = cookies['cookies-allowed'] === 'true';
 
@@ -48,6 +48,37 @@ export default function Head() {
           />
         </>
       )}
+      {props.isIndex && (<script type="application/ld+json" dangerouslySetInnerHTML={{__html: `
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "OKOIOS Consulting",
+  "url": "https://www.okoios.ch/",
+  "logo": "https://www.okoios.ch/_next/image?url=%2F_next%2Fstatic%2Fimage%2Fpublic%2Flogo.df7f6e7e77b405b5ef852e929b34c99d.png&w=3840&q=75",
+  "alternateName": "OKOIOS",
+  "sameAs": [
+    "https://www.linkedin.com/company/okoios/about/"
+  ],
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "telephone": "+41227357401",
+      "contactType": "customer service",
+      "areaServed": [
+        "CH",
+        "FR",
+        "GB",
+        "DE"
+      ],
+      "availableLanguage": [
+        "en",
+        "fr",
+        "de",
+        "it"
+      ]
+    }
+  ]
+}`}} />)}
     </NextHead>
   );
 }
