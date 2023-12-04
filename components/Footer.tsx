@@ -74,7 +74,7 @@ export default function Footer() {
               </a>
             </Link>
             <p className="text-sm text-center self-center mx-auto">
-              All Rights Reserved 2021 <span className="uppercase">Okoios</span>{' '}
+              All Rights Reserved 2024 <span className="uppercase">Okoios</span>{' '}
               Consulting
             </p>
           </div>
