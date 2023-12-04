@@ -1,4 +1,4 @@
-import jonathanAktepe from '../public/jonathan-aktepe.png';
+import kfScheufele from '../public/jonathan-aktepe.png';
 import linkedinLogo from '../public/linkedin.png';
 import lucasHess from '../public/lucas-hess.png';
 import Container from './common/Container';
@@ -25,8 +25,8 @@ export default function BusinessManagersSection() {
     },
     {
       id: 2,
-      image: jonathanAktepe,
-      name: 'Jonathan Aktepe',
+      image: kfScheufele,
+      name: 'Karl-Fritz Scheufele',
       details:
         '“Each and every project is a unique opportunity to accelerate your company in the digital future. I think the most important aspect when implementing new digital solutions is not the technology itself but rather the people behind it. We push ourselves to find the best possible path of leveraging technology for your organisation.”',
       linkedin: 'https://ch.linkedin.com/in/jonathan-aktepe-928840116',
