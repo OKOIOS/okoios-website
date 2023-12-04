@@ -31,6 +31,7 @@ export default function BusinessManagersSection() {
         '“Each and every project is a unique opportunity to accelerate your company in the digital future. I think the most important aspect when implementing new digital solutions is not the technology itself but rather the people behind it. We push ourselves to find the best possible path of leveraging technology for your organisation.”',
       linkedin: 'https://ch.linkedin.com/in/jonathan-aktepe-928840116',
       facebook: '/facebook.com',
+      className: 'rounded-full',
     },
   ];
   return (
