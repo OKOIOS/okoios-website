@@ -1,4 +1,4 @@
-import kfScheufele from '../public/Karl-Fritz-Scheufele.jpeg';
+import kfScheufele from '../public/Karl-Fritz-Scheufele.png';
 import linkedinLogo from '../public/linkedin.png';
 import lucasHess from '../public/lucas-hess.png';
 import Container from './common/Container';
